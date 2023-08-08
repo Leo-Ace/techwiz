@@ -2,12 +2,53 @@
   "users": [
     {
       "id": 0,
+      "name": "Nguyen Thien",
+      "age": "18",
+      "gender": 0,
+      "email": "thien@gmail.com",
+      "password": "thien123",
+      "thumbnail": ""
+    }
+  ],
+  "coach": [
+    {
+      "id": 0,
       "name": "",
-      "age": "",
-      "gender": "",
-      "email": "",
-      "password": "",
+      "age": 0,
+      "country": "",
+      "description": "",
+      "thumbnail": ""
+    }
+  ],
+  "footballTeam": [
+    {
+      "id": 0,
+      "id_coach": 0,
+      "id_ach": 0,
+      "name": "Name",
+      "thumbnail": "",
+      "description": "",
       "address": ""
+    }
+  ],
+  "achievements": [
+    {
+      "id": 0,
+      "content": [
+        "Cup"
+      ]
+    }
+  ],
+  "player": [
+    {
+      "id": 0,
+      "id_team": 0,
+      "id_ach": 0,
+      "name": "",
+      "age": 0,
+      "country": "",
+      "thumbnail": "",
+      "description": ""
     }
   ]
 }
