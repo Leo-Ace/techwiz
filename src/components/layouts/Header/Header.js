@@ -1,16 +1,37 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import classNames from "classnames/bind";
 import styles from "./header.module.css";
 import logo from "../../../logo.png";
 import { Link } from "react-router-dom";
-import { BsFacebook, BsFillCaretDownSquareFill, BsPinterest, BsSearch, BsTwitter } from "react-icons/bs";
+import { BsChevronUp, BsFacebook, BsFillCaretDownSquareFill, BsPinterest, BsSearch, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaUser } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
+import $ from 'jquery';
 
 const cx = classNames.bind(styles);
 
 function Header() {
   const boxMenuMd = useRef();
+  const headerElem = useRef();
+  const iconScrollTop = useRef();
+
+  useEffect(() => {
+    document.onscroll = () => {
+      if(window.scrollY >= 100) {
+        headerElem.current.classList.add("position-fixed", "fixed-top");
+        headerElem.current.setAttribute("style", `transform: translateY(0);top: 0px !important;opacity: 1;`);
+        iconScrollTop.current.setAttribute("style", `opacity: 1;visibility: visible;`);
+      } else {
+        headerElem.current.classList.remove("position-fixed", "fixed-top");
+        headerElem.current.setAttribute("style", ``);
+        iconScrollTop.current.setAttribute("style", ``);
+      }
+    }
+  }, []);
+
+  const handleScrollTop = () => {
+    $('html, body').animate({scrollTop: "0"}, 'slow');
+  }
 
   const dropdownMenu = (check) => {
     check ? boxMenuMd.current.setAttribute("style", `transform: translateY(0);`) : boxMenuMd.current.setAttribute("style", ``);
@@ -18,8 +39,8 @@ function Header() {
   
   return (
     <>
-      <header className={cx("headercomponent")}>
-        <div className={cx("position-fixed fixed-top")}>
+      <header className={"headercomponent"}>
+        <div className={cx("header-menu", "bg-white")} ref={headerElem}>
           <div className={cx("menu", "container")}>
             <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
               <Link
@@ -63,7 +84,7 @@ function Header() {
                   )}
                 >
                   <li className={cx("nav-item")}>
-                    <Link className={cx("nav-link d-block", "item")} to={"/"}>
+                    <Link className={cx("nav-link d-block text-dark", "item")} to={"/"}>
                       Home <span className="sr-only">(current)</span>
                     </Link>
                   </li>
@@ -73,7 +94,7 @@ function Header() {
                       "menu-toggle"
                     )}
                   >
-                    <Link className={cx("nav-link d-block", "item")}>
+                    <Link className={cx("nav-link d-block text-dark", "item")}>
                       Our team
                     </Link>
                     <div
@@ -109,37 +130,22 @@ function Header() {
                     </div>
                   </li>
                   <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block", "item")}>
+                    <Link className={cx("nav-link d-block text-dark", "item")}>
                       Team table
                     </Link>
                   </li>
                   <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block", "item")}>
+                    <Link className={cx("nav-link d-block text-dark", "item")}>
                       About Us
                     </Link>
                   </li>
                   <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block", "item")}>
+                    <Link className={cx("nav-link d-block text-dark", "item")}>
                       Contact Us
                     </Link>
                   </li>
                 </ul>
                 <ul className={cx("navbar-nav mt-2 mt-lg-0 ml-3", "box-icons")}>
-                  {/* <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block text-white p-0 m-0 rounded-circle overflow-hidden", "item")} >
-                      <BsTwitter className={cx("icon")} /> 
-                    </Link>
-                  </li>
-                  <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block text-white p-0 m-0 rounded-circle overflow-hidden", "item")} >
-                      <FaFacebookF className={cx("icon")} /> 
-                    </Link>
-                  </li>
-                  <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block text-white p-0 m-0 rounded-circle overflow-hidden", "item")} >
-                      <BsPinterest className={cx("icon")} /> 
-                    </Link>
-                  </li> */}
                   <li className={cx("nav-item ml-3 dropdown show")}>
                     <Link
                       className={cx(
@@ -187,7 +193,7 @@ function Header() {
                   <li
                     className={cx(
                       "nav-item ml-3 position-relative",
-                      "menu-toggle"
+                      "menu-toggle",
                     )}
                   >
                     <Link
@@ -235,7 +241,7 @@ function Header() {
             </nav>
           </div>
         </div>
-        <div className={cx("menu-md", "position-fixed w-100 h-100")} ref={boxMenuMd}>
+        <div className={cx("menu-md", "position-fixed w-100 h-100 d-block d-lg-none")} ref={boxMenuMd}>
           <div className={cx("container d-flex flex-column align-items-center justify-content-center position-relative mt-5")}>
             <Link
               className={cx(
@@ -284,7 +290,7 @@ function Header() {
                   </h5>
                 </div>
                 <div
-                  id={cx("collapseTwo")}
+                  id={"collapseTwo"}
                   className="collapse"
                   aria-labelledby="headingTwo"
                   data-parent="#accordion"
@@ -304,10 +310,6 @@ function Header() {
                   <h5 className={cx("mb-0")}>
                     <Link to={'/'}
                       className={cx("text-decoration-none text-dark d-flex justify-content-between p-3", "link-item")}
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="true"
-                      aria-controls="collapseThree"
                     >
                       <span>Team table</span>
                     </Link>
@@ -319,10 +321,6 @@ function Header() {
                   <h5 className={cx("mb-0")}>
                     <Link to={'/'}
                       className={cx("text-decoration-none text-dark d-flex justify-content-between p-3", "link-item")}
-                      data-toggle="collapse"
-                      data-target="#collapseFour"
-                      aria-expanded="true"
-                      aria-controls="collapseFour"
                     >
                       <span>About us</span>
                     </Link>
@@ -366,6 +364,11 @@ function Header() {
               <RxCross1 fontSize={25} />
             </span>
           </div>
+        </div>
+        <div ref={iconScrollTop} className={cx("box-iconup", "position-fixed")} onClick={handleScrollTop}>
+          <span className={cx("bg-danger p-2 btn rounded-0")}>
+            <BsChevronUp color='#fff' fontSize={30} />
+          </span>
         </div>
       </header>
     </>
