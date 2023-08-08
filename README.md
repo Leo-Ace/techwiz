@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## dowload source 
+git clone https://github.com/Leo-Ace/techwiz.git
+
 ## Config owlcarosel
 You need to inject a global window.jQuery first.
 
