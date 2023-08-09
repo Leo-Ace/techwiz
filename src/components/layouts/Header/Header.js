@@ -94,7 +94,7 @@ function Header() {
                       "menu-toggle"
                     )}
                   >
-                    <Link className={cx("nav-link d-block text-dark", "item")}>
+                    <Link className={cx("nav-link d-block", "item")}>
                       Our team
                     </Link>
                     <div
@@ -130,7 +130,7 @@ function Header() {
                     </div>
                   </li>
                   <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block text-dark", "item")}>
+                    <Link className={cx("nav-link d-block", "item")}>
                       Team table
                     </Link>
                   </li>
