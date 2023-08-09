@@ -9,9 +9,6 @@ function Home() {
   return (
     <>
       <main className={cx("homecomponent")}>
-        <div className={cx("banner")}>
-          <img src="/images/banner.png" alt='' className={cx("w-100")} />
-        </div>
         <div className={cx("home-component")}>
           <div className={cx("banner-img")}>
             <img src='/images/banner.png' alt='Banner' className={cx("w-100")} />
