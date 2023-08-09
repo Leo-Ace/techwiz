@@ -50,5 +50,19 @@
       "thumbnail": "",
       "description": ""
     }
+  ],
+  "match": [
+    {
+      "id": 0,
+      "id_team": 0
+    }
+  ],
+  "comment": [
+    {
+      "id": 0,
+      "id_user": 0,
+      "content": "",
+      "time": ""
+    }
   ]
 }
