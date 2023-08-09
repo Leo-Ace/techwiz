@@ -241,7 +241,7 @@ function Header() {
             </nav>
           </div>
         </div>
-        <div className={cx("menu-md", "position-fixed w-100 h-100 d-block d-lg-none")} ref={boxMenuMd}>
+        <div className={cx("menu-md", "position-fixed w-100 h-100 d-block d-lg-none overflow-auto")} ref={boxMenuMd}>
           <div className={cx("container d-flex flex-column align-items-center justify-content-center position-relative mt-5")}>
             <Link
               className={cx(
@@ -353,7 +353,7 @@ function Header() {
                 </div>
               </form>
             </div>
-            <div className={cx("d-flex mt-3 align-items-center")}>
+            <div className={cx("d-flex align-items-center")}>
               <Link to={'/login'} className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}>Login</Link>
               <span className={cx("small mx-2 d-block text-secondary")}>OR</span>
               <Link to={'/register'} className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}>Register</Link>
