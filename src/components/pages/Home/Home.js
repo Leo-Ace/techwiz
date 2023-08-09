@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './home.module.css';
 
-const cx = classNames.bind(styles);
+const cx = classNames.bind(styles); 
 
 function Home(props) {
   return (
