@@ -48,3 +48,9 @@ footer{
 .ban_quyen{
     margin-top: 20px;
 }
+@media screen and (max-width: 426px) {
+    .left1{
+        display: flex;
+        justify-content: center;
+    }
+}
