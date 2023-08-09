@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
 import * as http from '../common/http-common';
 
-const URL = 'http://localhost:8000/users';
+const URL = 'http://localhost:8000/wishlist';
 
 export const getAll = async () => {
   try {

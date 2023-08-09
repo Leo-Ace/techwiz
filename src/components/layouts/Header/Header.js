@@ -135,7 +135,7 @@ function Header() {
                     </Link>
                   </li>
                   <li className={cx("nav-item ml-2")}>
-                    <Link className={cx("nav-link d-block text-dark", "item")}>
+                    <Link to={'/about'} className={cx("nav-link d-block text-dark", "item")}>
                       About Us
                     </Link>
                   </li>
@@ -319,7 +319,7 @@ function Header() {
               <div className={cx("card bg-transparent border-0", "card-item")}>
                 <div className={cx("card-header p-0 border-0 bg-transparent")} id="headingFour">
                   <h5 className={cx("mb-0")}>
-                    <Link to={'/'}
+                    <Link to={'/about'}
                       className={cx("text-decoration-none text-dark d-flex justify-content-between p-3", "link-item")}
                     >
                       <span>About us</span>
