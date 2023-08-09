@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 
-const cx = classNames.bind(styles);
+const cx = classNames.bind(styles); 
 
 function Home() {
   return (
