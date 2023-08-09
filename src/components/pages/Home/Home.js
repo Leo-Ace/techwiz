@@ -7,9 +7,11 @@ const cx = classNames.bind(styles);
 function Home(props) {
   return (
     <>
-      <main>
+      <main className={cx("")}>
         <div className={cx("home-component container")}>
-          
+          <div className={cx("banner")}>
+
+          </div>
         </div>
       </main>
     </>
