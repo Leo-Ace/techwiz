@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 git clone https://github.com/Leo-Ace/techwiz.git
 
 ## Config owlcarosel
-You need to inject a global window.jQuery first.
+You need to inject a global window.jQuery first..
 
 In node-modules directory: react-scripts -> config -> webpack.config.js
 
