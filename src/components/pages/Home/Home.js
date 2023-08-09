@@ -8,9 +8,9 @@ const cx = classNames.bind(styles);
 function Home() {
   return (
     <>
-      <main className={cx("abc")}>
+      <main className={cx("homecomponent")}>
         <div className={cx("banner")}>
-          <img src='/images/banner.png' width={100} />
+          <img src="/images/banner.png" alt='' className={cx("w-100")} />
         </div>
         <div className={cx("home-component")}>
           <div className={cx("container")}>
@@ -31,7 +31,7 @@ function Home() {
                   <div className={cx("boder-colum")}>
                     <div className={cx("d-flex pb-2", "content")}>
                       <div className={cx("col-4")}>
-                        <img className={cx("ml-3")} src='/images/team1.jpg' />
+                        <img className={cx("ml-3")} src='/images/team1.jpg' alt="" />
                         <div className={cx("text-content text-center text-light")}>
                           Tigres Zipaquira
                         </div>
