@@ -1,0 +1,25 @@
+.abc{
+    background-color: black;
+}
+.bcd{
+    background-color: rgba(29, 29, 29, 0.96);
+}
+.score{
+    background-color: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+}
+.content{
+    border-bottom: 1px solid #ff6600;
+}
+.boder-colum{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.text-comment{
+    padding: 0 5px 3px 5px;
+    text-align: center;
+}
+.text-comment:hover{
+    background-color: #ff6600;
+}
