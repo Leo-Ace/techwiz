@@ -58,7 +58,7 @@ function Home(props) {
                         <div className={cx("text-comment")}>Captain</div>
                       </div>
                       <div className={cx("text-comment")}>
-                        Xem ngay
+                        <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                       </div>
                     </div>
                   </div>
