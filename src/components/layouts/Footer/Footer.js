@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './footer.module.css';
+import logo from '../../../logo.png';
 import { AiOutlineHome } from 'react-icons/ai';
 import { BiPhoneCall } from 'react-icons/bi';
 import { GoClock } from 'react-icons/go';
@@ -22,7 +23,7 @@ function Footer(props) {
           <div className={cx("row")}>
             <div className={cx("col-lg-8 footer-left")} >
               <div className={cx("left1")}>
-                <img src='/images/favicon.ico'></img>
+                <img src={logo} width={100}></img>
               </div>
               <div className={cx("left2")}>
                 <div className={cx("icon-address")}>
