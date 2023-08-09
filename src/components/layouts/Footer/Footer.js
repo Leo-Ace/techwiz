@@ -61,7 +61,7 @@ function Footer(props) {
               <h5>Subscribe to our newsletter</h5>
               <p>Sign up for our newsletter to receive the latest news and updates about special offers and service discounts.</p>
               <div className={cx("email")}>
-                <input type="email" name="" id="input" class="form-control" value="" required="required" title="" placeholder='Enter your email' />
+                <input type="email" name="" id="input" className="form-control"  required title="" placeholder='Enter your email' />
                 <Link to={''} className={cx("submit")}><BsFillSendFill fontSize={25} color='#de3e18' /></Link>
               </div>
             </div>
