@@ -1,0 +1,58 @@
+.about{
+    background-color: #eee;
+    padding: 15px;
+}
+.about>p{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+}
+.icon_home{
+    margin-right: 5px;
+    margin-top: -4px;
+}
+.home{
+    margin-right: 5px;
+}
+.home>a{
+    color: #e01a22;
+    text-decoration: none;
+}
+.back{
+    display: flex;
+    justify-content: center;
+}
+.title_text{
+    display: flex;
+}
+.title_black{
+    margin-right: 5px;
+}
+.title_red{
+    color: #e01a22;
+}
+.line_black{
+    border: 2px solid black;
+    margin-bottom:5px ;
+    width: 130px;
+}
+.line_red{
+    border: 2px solid #e01a22;
+    width: 170px;
+}
+.image>img{
+    width: 100%;
+}
+.item{
+    margin-top: 20px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-bottom:20px ;
+}
+.blogs{
+    border: 1px solid grey ;
+}
+.anh>img{
+    width: 100%;
+}

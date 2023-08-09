@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function Home(props) {
+function Home() {
   return (
     <>
       <main className={cx("abc")}>
