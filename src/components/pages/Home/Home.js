@@ -26,10 +26,10 @@ function Home() {
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                   <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -42,36 +42,34 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
                       </div>
-
-
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -84,20 +82,20 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
@@ -106,10 +104,10 @@ function Home() {
 
                     </div>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -122,20 +120,20 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
@@ -146,10 +144,10 @@ function Home() {
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -162,30 +160,30 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -198,30 +196,30 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -234,30 +232,30 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
+                      <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -270,20 +268,20 @@ function Home() {
                               2 - 2
                             </div>
                           </div>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
+                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
+                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
+                          <div className='comment d-flex h-100 align-items-center'>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment")}>
+                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
