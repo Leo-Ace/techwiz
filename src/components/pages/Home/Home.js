@@ -9,6 +9,9 @@ function Home(props) {
   return (
     <>
       <main className={cx("abc")}>
+        <div className={cx("banner")}>
+          <img src='/images/banner.png' width={100} />
+        </div>
         <div className={cx("home-component")}>
           <div className={cx("container")}>
             <div className={cx("bcd")}>
