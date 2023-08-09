@@ -9,7 +9,7 @@ function Home(props) {
     <>
       <main>
         <div className={cx("home-component container")}>
-          <h1>Home</h1>
+          
         </div>
       </main>
     </>
