@@ -25,6 +25,7 @@ function Header() {
   useEffect(() => {
     document.onscroll = () => {
       if (window.scrollY >= 100) {
+        headerElem.current.classList.add("position-fixed", "fixed-top");
         headerElem.current.setAttribute(
           "style",
           `transform: translateY(-100px);`
@@ -38,6 +39,7 @@ function Header() {
           `opacity: 1;visibility: visible;`
         );
       } else {
+        headerElem.current.classList.remove("position-fixed", "fixed-top");
         headerElem.current.querySelector('div').setAttribute(
           "style",
           ``

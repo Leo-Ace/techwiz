@@ -1,9 +1,11 @@
 .header-menu {
+  top: 0 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .header-menu>div {
   transition: all 0.2s linear;
+  z-index: 2000;
 }
 
 @keyframes animationHeader {
