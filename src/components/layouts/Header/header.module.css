@@ -1,35 +1,14 @@
-.headercomponent>div {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+.header-menu {
+  top: -100px !important;
+  opacity: 1;
+  transition: all 0.3s linear;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .box-menu .item {
   font-weight: bold;
   transition: all 0.2s linear;
 }
-/* 
-.box-icons>li .item {
-  width: 50px !important;
-  height: 50px !important;
-  line-height: 50px !important;
-  text-align: center;
-}
-
-.box-icons>li:nth-child(1) .item {
-  background-color: #76A9EA;
-}
-
-.box-icons>li:nth-child(2) .item {
-  background-color: #356FCF;
-}
-
-.box-icons>li:nth-child(3) .item {
-  background-color: #ff0000;
-}
-
-.box-icons>li .item:hover {
-  background-color: #fff;
-  color: #000 !important;
-} */
 
 .box-icons .item:hover {
   color: red !important;
@@ -106,7 +85,8 @@
 
 .form-search input, .form-search input:focus {
   border-radius: 20px;
-  background-color: rgba(255, 0, 0, 0.425);
+  background-color: rgba(255, 130, 130, 0.425);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712) !important;
 }
 
 .form-search button {
@@ -131,7 +111,7 @@
   transition: all 0.3s linear;
 }
 
-#collapseTwo .item:hover {
+.card-item>div:last-child .item:hover {
   color: red !important;
 }
 
@@ -141,7 +121,7 @@
   background-color: #00000025;
 }
 
-.menu-md .form-search input, .form-search input:focus {
+.menu-md .form-search input, .menu-md .form-search input:focus {
   border-radius: 40px;
   background-color: rgba(255, 0, 0, 0.425);
 }
@@ -161,5 +141,17 @@
 }
 
 .box-exit>span:hover {
+  opacity: 0.8;
+}
+
+.box-iconup {
+  right: 20px;
+  bottom: 100px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.box-iconup:hover span {
   opacity: 0.8;
 }
