@@ -1,4 +1,4 @@
-.abc{
+.homecomponent{
     background-color: #fff;
 }
 .bcd{
@@ -17,10 +17,6 @@
     margin-bottom: 10px;
     background-image: url(../../../../public/images/background.jpg);
     background-size: 100%;
-}
-.text-comment{
-    padding: 0 5px 3px 5px;
-    text-align: center;
 }
 .text-comment:hover{
     background-color: #ff6600;
