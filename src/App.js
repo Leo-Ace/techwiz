@@ -9,7 +9,10 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Main children={<Home />} />} />
-        <Route path='/contact' element={<Main children={<Contact />} />} />
+        <Route path='/Detail_player' element={<Main children={<Detail_player />} />} />
+        <Route path='/Detail_member_2' element={<Main children={<Detail_member2/>} />} />
+        <Route path='/about' element={<Main children={<About />} />} />
+
       </Routes>
     </>
   );
