@@ -13,7 +13,7 @@ function Detail_player(props) {
               <div className={cx("product-imgs")}>
                 <div className={cx("img-display")}>
                   <div className={cx("img-showcase")}>
-                    <img src="/images/Detail_member/01.jpg" alt="shoe image" />
+                    <img src="/images/detail/01.jpg" alt="shoe image" />
                   </div>
                 </div>
 
