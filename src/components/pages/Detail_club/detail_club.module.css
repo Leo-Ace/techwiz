@@ -1,0 +1,80 @@
+.name_club{ 
+    margin-top: 30px;
+    text-align: center;
+    top: 50px;
+    left: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.list_honours{
+    font-size: 22px;
+    font-weight: 600;
+}
+.tieu_de{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.cau_thu{
+    margin-top: 30px;
+    border: 1px solid rgb(157, 156, 156);
+    box-shadow: 0px 3px 9px 0px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.img_player{
+    overflow: hidden;
+}
+.cau_thu:hover .img_player{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.cau_thu>a{
+    text-decoration: none;
+    color: #001838;
+}
+.img_player>img{
+    width: 100%;
+    background-image:url(../../../../public/images/nen_player.jpg);
+}
+.desc_player{
+    margin-top: 6px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.flag{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    left: 10px;
+}
+.flag>img{
+    width: 100%;
+}
+@media screen and (max-width:991px) {
+    .flag{
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        left: 40px;
+    }
+}
+@media screen and (max-width:575px) {
+    .flag{
+        width: 70px;
+        height: 70px;
+        top: 40px;
+        left: 40px;
+    }
+}
+@media screen and (max-width:426px) {
+    .flag{
+        width: 45px;
+        height: 45px;
+        top: 30px;
+        left: 30px;
+    }
+}
