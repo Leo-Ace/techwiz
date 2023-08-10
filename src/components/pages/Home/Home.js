@@ -10,8 +10,62 @@ function Home() {
     <>
       <main className={cx("abc")}>
         <div className={cx("home-component")}>
-          <div className={cx("banner-img")}>
-            <img src='/images/banner.png' alt='Banner' className={cx("w-100")} />
+          <div>
+            <div id="carouselId" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+                <li data-target="#carouselId" data-slide-to="3"></li>
+                <li data-target="#carouselId" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="/images/cauthu-01.jpg" alt="First slide" className={cx("w-100")} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Erling Haaland</h3>
+                    <p>Manchester united</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/cauthu-02.jpg" alt="Second slide" className={cx("w-100")} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/cauthu-03.jpg" alt="Third slide" className={cx("w-100")} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/cauthu-04.jpg" alt="Third slide" className={cx("w-100")} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/cauthu-05.jpg" alt="Third slide" className={cx("w-100")} />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
           </div>
           <div className={cx("container")}>
             <div className={cx("bcd")}>
@@ -66,7 +120,7 @@ function Home() {
                   </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <div className={cx("row m-0")}>
+                  <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
                       <div className={cx("boder-colum")}>
                         <div className={cx("d-flex pb-2", "content")}>
@@ -144,7 +198,7 @@ function Home() {
                   </div>
                 </div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <div className={cx("row m-0")}>
+                  <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
                       <div className={cx("boder-colum")}>
                         <div className={cx("d-flex pb-2", "content")}>
@@ -293,10 +347,9 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div>
-              <h1>Top cầu thủ</h1>
-            </div>
+
           </div>
+
         </div>
       </main>
     </>
