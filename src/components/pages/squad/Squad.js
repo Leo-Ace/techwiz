@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import styles from './Detail_member.css';
+import styles from './Squad.css';
 import { Link } from "react-router-dom";
-import Detail_player from './Detail.player';
+// import Detail_player from '../Detail_player';
 const cx = classNames.bind(styles);
-function Detail_member2() {
+function Squad() {
 	return (
 		<div className={cx("detail_member2")}>
 			<div className={cx("container")}>
@@ -18,7 +18,7 @@ function Detail_member2() {
 										<strong class="name">Neymar</strong>
 									</span>
 									<span class="nationality">
-										<img src="/images/detail_member/brazil.png" alt="Argentina" class="flag" />Brazil
+										<img src="/images/detail/brazil.png" alt="Argentina" class="flag" />Brazil
 									</span>
 								</div>
 							</a>
@@ -389,4 +389,4 @@ function Detail_member2() {
 	);
 }
 
-export default Detail_member2;
+export default Squad;
