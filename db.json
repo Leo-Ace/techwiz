@@ -50,5 +50,42 @@
       "thumbnail": "",
       "description": ""
     }
+  ],
+  "match": [
+    {
+      "id": 0,
+      "id_team_one": 0,
+      "leagues": "",
+      "status": 0,
+      "time": "",
+      "address": "",
+      "thumbnail": "",
+      "description": []
+    }
+  ],
+  "order-match": [
+    {
+      "id": 0,
+      "id_match": 0,
+      "id_team": 0,
+      "ratio": 0,
+      "squad": "0-0-0",
+      "thumbnail": "",
+      "description": []
+    }
+  ],
+  "comment": [
+    {
+      "id": 0,
+      "id_user": 0,
+      "id_match": 0,
+      "content": "",
+      "time": ""
+    }
+  ],
+  "wishlist": [
+    {
+      "id": 0
+    }
   ]
 }
