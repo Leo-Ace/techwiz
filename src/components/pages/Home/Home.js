@@ -54,7 +54,6 @@ function Home() {
                   >
                     Sắp diễn ra
                   </a>
-                  t-b{" "}
                 </div>
               </nav>
               <div class="tab-content" id="nav-tabContent">
