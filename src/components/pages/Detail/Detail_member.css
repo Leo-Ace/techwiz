@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.img-showcase img {
+  min-width: 80%;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.product-info p {
+  color: #555;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 0;
+  padding: 11px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.product-info p span {
+  position: absolute;
+  right: 15px;
+  bottom: 11px;
+  color: #333;
+  font-weight: 400;
+}
+
+.tbl-data th {
+  font-weight: bold;
+}
+.tbl-data {
+    margin-bottom: 24px;
+}
+.tbl-data {
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    border-collapse: inherit;
+    overflow: hidden;
+}
+
+.tbl-data th,
+.tbl-data td {
+  border-top: 1px solid #c7c7c7;
+  font-size: 14px;
+  line-height: 21px;
+  color: #38404D;
+  padding: 9px 10px;
+  text-align: center;
+}
+
+.tbl-data th {
+  border-top: none;
+  border-bottom: none !important;
+}
+.statistics{
+  background: #f6f9fa;
+}
+.wide-70 {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+h2.h2-xl {
+  font-size: 3.75rem;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.wrap-list-cauthu .logo-club {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+.wrap-list-cauthu .list-cauthu {
+  width: calc(25% - 24px);
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #C7C7C7;
+  border-radius: 6px;
+  margin: 12px;
+}
+.wrap-list-cauthu .header-list-cauthu {
+  background: #FAFAFA;
+  border-bottom: 1px solid #C7C7C7;
+  border-radius: 6px 6px 0 0;
+  padding: 16px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+}
+.avatar {
+  background: #E5E5E5;
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  border: 2px solid #C7C7C7;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrap-list-cauthu .header-list-cauthu .right {
+  height: 100%;
+}
+.right {
+  float: right !important;
+}
+.wrap-list-cauthu .header-list-cauthu .name {
+  position: static;
+  padding: 0;
+  display: block;
+  font-size: 16px;
+  font-family: "Bai Jamjuree",sans-serif;
+  color: #38404D;
+  margin-bottom: 12px;
+}
+.wrap-list-cauthu .nationality {
+  color: #A4ABB6;
+  display: block;
+  font-size: 14px;
+}
+.wrap-list-cauthu .nationality .flag {
+  width: 16px;
+  margin-right: 7px;
+}
+.wrap-list-cauthu .content {
+  padding: 16px 12px;
+  line-height: 1.167;
+  font-size: 13px;
+}
+.wrap-list-cauthu .content .width_common {
+  align-items: center;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.wrap-list-cauthu .content .left {
+  color: #A4ABB6;
+}
+.wrap-list-cauthu .content .right {
+  color: #38404D;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.wrap-list-cauthu .view-detail {
+    text-align: center;
+    clear: both;
+    font-size: 11px;
+    font-weight: bold;
+}
+.wrap-list-cauthu .view-detail a, .wrap-list-cauthu .view-detail span {
+  width: 72px;
+  line-height: 29px;
+  text-align: center;
+  display: inline-block;
+  color: #636B79;
+  background: #FAFAFA;
+  border: 1px solid #AEB4C4;
+  border-radius: 6px;
+}
