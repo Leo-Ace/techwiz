@@ -1,0 +1,19 @@
+.headercomponent .navbar-menu .nav-item:hover .nav-link {
+  color: red !important;
+}
+
+.headercomponent .navbar-menu .nav-item.active .nav-link {
+  color: red !important;
+}
+
+.headercomponent .navbar-menu .nav-item .nav-link:focus {
+  color: red !important;
+}
+
+.headercomponent .navbar-menu .nav-item .nav-link:active {
+  color: red !important;
+}
+
+.headercomponent .navbar-menu .nav-item .nav-link:target {
+  color: red !important;
+}

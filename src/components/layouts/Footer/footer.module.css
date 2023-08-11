@@ -1,0 +1,52 @@
+footer{
+    background-color: #313131;
+    color: white;
+    padding: 30px;
+}
+.footer_title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.blog{
+    margin-top: 20px;
+}
+.address{
+    display: flex;
+}
+.icon_address{
+    color: #e01a22;
+    margin-right: 10px ;
+}
+.email{
+    display: flex;
+}
+.icon_email{
+    color: #e01a22;
+    margin-right: 10px ;
+}
+.phone{
+    display: flex;
+}
+.icon_phone{
+    color: #e01a22;
+    margin-right: 10px ;
+}
+.list_link>a{
+    color: #ffffff;
+}
+.line{
+    border: 1px solid #949393;
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+.footer_icon_item{
+    margin-right: 30px ;
+    margin-left: 15px;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
