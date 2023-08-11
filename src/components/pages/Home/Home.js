@@ -7,7 +7,6 @@ import { ImTable2 } from "react-icons/im";
 import { RiTeamFill } from "react-icons/ri";
 import { MdSecurity } from "react-icons/md";
 import {
-  getAllOrderMatch,
   getOrderMatchByIdMatch,
 } from "../../../services/orderMatchService";
 import { getAllMatch } from "../../../services/matchServicce";
