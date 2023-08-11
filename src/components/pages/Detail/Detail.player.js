@@ -112,6 +112,26 @@ function Detail_player(props) {
                       <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
                       <td>0</td>
                     </tr>
+                    <tr>
+                      <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
+                      <td>0</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
