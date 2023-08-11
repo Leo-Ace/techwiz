@@ -16,8 +16,23 @@ import { getAllTeam } from "../../../services/teamService";
 const cx = classNames.bind(styles);
 
 function Header() {
+  const [account, setAccount] = useState([]);
+  useEffect(() => {
+    const account = JSON.parse(sessionStorage.getItem('login'));
+    if (account) {
+      setAccount(account);
+      console.log(account)
+    }
+  }, []);
+
+  const onLogout = () => {
+    sessionStorage.clear();
+    window.location.assign('/login');
+  };
+
+
   const [team, setTeam] = useState([]);
-  
+
   const boxMenuMd = useRef();
   const headerElem = useRef();
   const iconScrollTop = useRef();
@@ -52,7 +67,7 @@ function Header() {
 
   useEffect(() => {
     const [err_team, dt_team] = getAllTeam();
-    if(err_team) {
+    if (err_team) {
       throw Error('Error!');
     } else {
       setTeam(dt_team);
@@ -70,8 +85,8 @@ function Header() {
   };
 
   return (
-    <>
-      <header className={"headercomponent"}>
+    <header>
+      <div className={"headercomponent"}>
         <div className={cx("header-menu", "bg-transparent")} ref={headerElem}>
           <div className={cx("position-fixed fixed-top")}>
             <div className={cx("menu", "container")}>
@@ -256,7 +271,29 @@ function Header() {
                         )}
                       >
                         <ul className={cx("list-unstyled")}>
-                          <li className={cx("nav-item")}>
+                          {account.name && <li className={cx("nav-item")}>
+                            <span
+                              className={cx(
+                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                                "item"
+                              )}
+                            >
+                              Hi {account.name}
+                            </span>
+                          </li>}
+                          {account.name && <li className={cx("nav-item")}>
+                            <a
+                              href="#"
+                              className={cx(
+                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                                "item"
+                              )}
+                              onClick={() => onLogout()}
+                            >
+                              Logout
+                            </a>
+                          </li>}
+                          {!account.name && <li className={cx("nav-item")}>
                             <Link
                               to={"/login"}
                               className={cx(
@@ -266,10 +303,10 @@ function Header() {
                             >
                               Login
                             </Link>
-                          </li>
-                          <li className={cx("nav-item")}>
+                          </li>}
+                          {!account.name && <li className={cx("nav-item")}>
                             <Link
-                              to={"/register"}
+                              to={'/register'}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -277,7 +314,7 @@ function Header() {
                             >
                               Register
                             </Link>
-                          </li>
+                          </li>}
                         </ul>
                       </div>
                     </li>
@@ -467,25 +504,57 @@ function Header() {
                 </div>
               </form>
             </div>
-            <div className={cx("d-flex align-items-center")}>
-              <Link
-                to={"/login"}
-                className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
-                onClick={() => dropdownMenu(false)}
-              >
-                Login
-              </Link>
-              <span className={cx("small mx-2 d-block text-secondary")}>
-                OR
-              </span>
-              <Link
-                to={"/register"}
-                className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
-                onClick={() => dropdownMenu(false)}
-              >
-                Register
-              </Link>
-            </div>
+            {account.name &&
+              <div className={cx("d-flex align-items-center")}>
+
+                <span
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                >
+                  Hi {account.name}
+                </span>
+
+                <span className={cx("small mx-2 d-block text-secondary")}>OR</span>
+
+                <a
+                  href="#"
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                  onClick={() => onLogout()}
+                >
+                  Logout
+                </a>
+              </div>
+            }
+            {!account.name &&
+              <div className={cx("d-flex align-items-center")}>
+
+                <Link
+                  to={"/login"}
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                >
+                  Login
+                </Link>
+
+                <span className={cx("small mx-2 d-block text-secondary")}>OR</span>
+                <Link
+                  to={'/register'}
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                >
+                  Register
+                </Link>
+              </div>
+            }
           </div>
           <div
             className={cx("box-exit", "position-absolute p-0 m-0")}
@@ -501,12 +570,12 @@ function Header() {
           className={cx("box-iconup", "position-fixed")}
           onClick={handleScrollTop}
         >
-          <span className={cx("bg-danger p-2 btn rounded-0")}>
-            <BsChevronUp color="#fff" fontSize={30} />
+          <span className={cx("bg-danger p-2 btn rounded-circle")}>
+            <BsChevronUp color="#fff" fontSize={25} height={25} width={25} />
           </span>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
 
