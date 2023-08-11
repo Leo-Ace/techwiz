@@ -1,29 +1,65 @@
-.homecomponent{
+.homecomponent {
     background-color: #fff;
 }
-.bcd{
-    background-color: rgba(29, 29, 29, 0.96);
+
+.bcd {
+    /* background-color: rgba(29, 29, 29, 0.96); */
 }
-.score{
+
+.score {
     background-color: #ff6600;
     border: 1px solid #ff6600;
     border-radius: 5px;
 }
-.content{
+
+.content {
     border-bottom: 1px solid #ff6600;
 }
-.boder-colum{
+
+.boder-colum {
     border: 1px solid #ccc;
     margin-bottom: 10px;
     background-image: url(../../../../public/images/background.jpg);
     background-size: 100%;
 }
-.text-comment:hover{
+
+.text-comment:hover {
     background-color: #ff6600;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
 }
-.img-player{
-    border-radius: 50%;
+
+.bg-pd {
+    background-color: black;
+    padding: 100px 0;
+
+}
+
+.hover-effect:hover {
+    opacity: 0.7;
+}
+
+.card-body {
+    color: #fff;
+    background-image: url(../../../../public/images/banner4.png);
+    background-size: cover;
+    padding: 50px;
+}
+
+.size {
+    width: 100px;
+    height: 100px;
+
+}
+
+.zoom-effect {
+    transition: transform 0.3s;
+    /* Thời gian hoàn thành hiệu ứng */
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+    /* Tăng kích thước lên 110% khi hover */
 }
