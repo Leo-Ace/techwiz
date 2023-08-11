@@ -2,6 +2,8 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
+import {PiSoccerBallFill} from "react-icons/pi"
+
 
 const cx = classNames.bind(styles); 
 
@@ -68,11 +70,11 @@ function Home() {
 
           </div>
           <div className={cx("container")}>
-            <div className={cx("bcd")}>
+            <div className={cx("bcd", "my-2")}>
               <nav className={cx("py-2")}>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div className={cx("nav nav-tabs")} id="nav-tab" role="tablist">
                   <a
-                    class="nav-item nav-link active"
+                    className={cx("nav-item nav-link active")}
                     id="nav-home-tab"
                     data-toggle="tab"
                     href="#nav-home"
@@ -83,7 +85,7 @@ function Home() {
                     All
                   </a>
                   <a
-                    class="nav-item nav-link"
+                    className={cx("nav-item nav-link")}
                     id="nav-profile-tab"
                     data-toggle="tab"
                     href="#nav-profile"
@@ -94,7 +96,7 @@ function Home() {
                     Direc
                   </a>
                   <a
-                    class="nav-item nav-link"
+                    className={cx("nav-item nav-link")}
                     id="nav-contact-tab"
                     data-toggle="tab"
                     href="#nav-contact"
@@ -106,9 +108,9 @@ function Home() {
                   </a>
                 </div>
               </nav>
-              <div class="tab-content" id="nav-tabContent">
+              <div className={cx("tab-content")} id="nav-tabContent">
                 <div
-                  class="tab-pane fade show active"
+                  className={cx("tab-pane", "fade", "show", "active")}
                   id="nav-home"
                   role="tabpanel"
                   aria-labelledby="nav-home-tab"
@@ -169,27 +171,29 @@ function Home() {
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between align-items-center")}>
-                          <div className='comment d-flex h-100 align-items-center'>
-                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
-                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
-                            <div className={cx("text-comment", "py-1 px-2 text-center")}>Captain</div>
+                        <div className={cx("d-flex text-light justify-content-between")}>
+                          <div className='comment d-flex'>
+                            <div className={cx("text-comment")}>Captain</div>
+                            <div className={cx("text-comment")}>Captain</div>
+                            <div className={cx("text-comment")}>Captain</div>
                           </div>
-                          <div className={cx("text-comment", "py-1 px-2 text-center")}>
+                          <div className={cx("text-comment")}>
                             <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
                           </div>
                         </div>
                       </div>
+
+
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                   <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
+                      <div className={cx("boder-colum")}>
                         <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4 d-flex flex-column justify-content-center")}>
-                            <img className={cx("w-50 m-auto d-block")} src='/images/team1.jpg' />
+                          <div className={cx("col-4")}>
+                            <img className={cx("ml-3")} src='/images/team1.jpg' />
                             <div className={cx("text-content text-center text-light")}>
                               Tigres Zipaquira
                             </div>
@@ -421,10 +425,10 @@ function Home() {
                   </div>
                 </div>
                 <div
-                  class="tab-pane fade"
-                  id="nav-contact"
+                  className="tab-pane fade"
+                  id="nav-profile"
                   role="tabpanel"
-                  aria-labelledby="nav-contact-tab"
+                  aria-labelledby="nav-profile-tab"
                 >
                   <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
@@ -631,108 +635,15 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div className={cx("col-4")}>
-                            <div
-                              className={cx(
-                                "col-12 mt-4 p-1 text-center text-light",
-                                "score"
-                              )}
-                            >
-                              Trực tiếp
-                            </div>
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              2 - 2
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "d-flex text-light justify-content-between align-items-center"
-                          )}
-                        >
-                          <div className="comment d-flex h-100 align-items-center">
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+                <div
+                  className="tab-pane fade"
+                  id="nav-contact"
+                  role="tabpanel"
+                  aria-labelledby="nav-contact-tab"
+                >
+                  <div className={cx("row m-0")}>
                     <div className={cx("col-md-6 px-0 px-md-2")}>
                       <div className={cx("boder-colum", "pt-2")}>
                         <div className={cx("d-flex pb-2", "content")}>
@@ -839,6 +750,10 @@ function Home() {
                 </div>
               </div>
             </div>
+
+          </div>
+          <div>
+            <img src="/images/banner3.jpg" className={cx("w-100")} />
           </div>
 
         </div>
