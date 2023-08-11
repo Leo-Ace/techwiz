@@ -3,6 +3,8 @@ import styles from './login.module.css';
 import { useForm } from 'react-hook-form';
 import {Link} from 'react-router-dom'
 import { account } from '../../../db';
+import $ from 'jquery';
+import { useEffect } from 'react';
 
 const cx = classNames.bind(styles);
 const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -11,6 +13,9 @@ const passwordPattern = /^[a-z0-9_\.]+$/;
 function Login(props) {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const accounts = account;
+        useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
     const onSubmit = function(data) {
         let acc = accounts.find((item)=>{
             return item.email === data.email && item.password === data.password

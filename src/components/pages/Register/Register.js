@@ -3,6 +3,8 @@ import styles from './register.module.css';
 import { useForm } from 'react-hook-form';
 import { account } from '../../../db';
 import {Link} from 'react-router-dom'
+import $ from 'jquery';
+import { useEffect } from 'react';
 
 const cx = classNames.bind(styles);
 const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -14,7 +16,9 @@ const namePattenrn = /^[A-ZÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸ
 function Register(props) {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const accounts = account;
-
+    useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
 
     const onSubmit = async (data) => {
         console.log(accounts);

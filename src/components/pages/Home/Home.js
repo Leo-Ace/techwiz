@@ -11,11 +11,15 @@ import {
 } from "../../../services/orderMatchService";
 import { getAllMatch } from "../../../services/matchServicce";
 import { getTeamById } from "../../../services/teamService";
+import $ from 'jquery';
 
 const cx = classNames.bind(styles);
 
 function Home() {
   const [match, setMatch] = useState([]);
+    useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
 
   useEffect(() => {
     const [err_match, data_match] = getAllMatch();

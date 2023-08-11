@@ -5,10 +5,15 @@ import { Link, useParams } from "react-router-dom";
 import { getMatchById } from '../../../services/matchServicce';
 import { getOrderMatchByIdMatch } from '../../../services/orderMatchService';
 import { getTeamById } from '../../../services/teamService';
+import $ from 'jquery';
+
 const cx = classNames.bind(styles);
 function Match() {
   const { id } = useParams();
   const [match, setMatch] = useState();
+      useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
 
   useEffect(() => {
     const [err_match, data_match] = getMatchById(Number(id));

@@ -1,21 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import classNames from 'classnames/bind';
-import styles from './Detail_member.css';
-import { useParams } from 'react-router-dom';
-import { getPlayerById } from '../../../services/playerService';
-import { getTeamById } from '../../../services/teamService';
+import React, { useEffect, useState } from "react";
+import classNames from "classnames/bind";
+import styles from "./Detail_member.css";
+import { useParams } from "react-router-dom";
+import { getPlayerById } from "../../../services/playerService";
+import { getTeamById } from "../../../services/teamService";
+import $ from "jquery";
 
 const cx = classNames.bind(styles);
 function Detail_player(props) {
   const { id } = useParams();
   const [player, setPlayer] = useState();
   const [club, setClub] = useState();
+  useEffect(() => {
+    $("html, body").animate({ scrollTop: "0" }, "slow");
+  }, []);
 
   useEffect(() => {
     const [err, data_player] = getPlayerById(Number(id));
     setPlayer(data_player);
-    console.log(data_player)
-    const [err_team, data_team] = getTeamById(Number(data_player ? data_player.id_team : ""));
+    console.log(data_player);
+    const [err_team, data_team] = getTeamById(
+      Number(data_player ? data_player.id_team : "")
+    );
     setClub(data_team);
   }, [id]);
 
@@ -23,13 +29,19 @@ function Detail_player(props) {
     <>
       <div className={cx("detail_member")}>
         <div className={cx("banner_club")}>
-          <img className={cx("w-100")} src='/images/banne_detailClub.gif' alt="" />
+          <img
+            className={cx("w-100")}
+            src="/images/banne_detailClub.gif"
+            alt=""
+          />
         </div>
         {player ? (
           <>
             <div className={cx("player")}>
               <div className={cx("project-title")}>
-                <h1 className={cx("h2-lg w-100 text-center text-danger py-4")}>{player.name}</h1>
+                <h1 className={cx("h2-lg w-100 text-center text-danger py-4")}>
+                  {player.name}
+                </h1>
               </div>
               <div className={cx("container mb-4")}>
                 <div className={cx("row")}>
@@ -37,7 +49,11 @@ function Detail_player(props) {
                     <div className={cx("product-imgs")}>
                       <div className={cx("img-display")}>
                         <div className={cx("img-showcase")}>
-                          <img src={player.thumbnail} alt="shoe image" className={cx("w-100 p-3")} />
+                          <img
+                            src={player.thumbnail}
+                            alt="shoe image"
+                            className={cx("w-100 p-3")}
+                          />
                         </div>
                       </div>
                     </div>
@@ -46,13 +62,27 @@ function Detail_player(props) {
                     <div className={cx("product-description")}>
                       <div className={cx("product-txt")}>
                         <div className={cx("product-info")}>
-                          <p>Full Name: <span>{player.name}</span></p>
-                          <p>Birthday: <span>{player.birthday}</span></p>
-                          <p>Nationality: <span>{player.country}</span></p>
-                          <p>Football club: <span>{club ? club.name : ''}</span></p>
-                          <p>Location: <span>{player.location}</span></p>
-                          <p>Height: <span>{player.height} cm</span></p>
-                          <p>Weight: <span>{player.weight} kg</span></p>
+                          <p>
+                            Full Name: <span>{player.name}</span>
+                          </p>
+                          <p>
+                            Birthday: <span>{player.birthday}</span>
+                          </p>
+                          <p>
+                            Nationality: <span>{player.country}</span>
+                          </p>
+                          <p>
+                            Football club: <span>{club ? club.name : ""}</span>
+                          </p>
+                          <p>
+                            Location: <span>{player.location}</span>
+                          </p>
+                          <p>
+                            Height: <span>{player.height} cm</span>
+                          </p>
+                          <p>
+                            Weight: <span>{player.weight} kg</span>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -70,7 +100,9 @@ function Detail_player(props) {
                   </div>
                 </div>
                 <div className={cx("mb-5")}>
-                  <h5 className={cx("text-secondary", "career")}>- {player.description}</h5>
+                  <h5 className={cx("text-secondary", "career")}>
+                    - {player.description}
+                  </h5>
                 </div>
                 <div className={cx("row")}>
                   <div className={cx("col-lg-12")}>
@@ -82,31 +114,47 @@ function Detail_player(props) {
                 <div className={cx("row")}>
                   <div className={cx("col-lg-6")}>
                     <div className={cx(" achievements")}>
-                      <table cellSpacing="0" cellPadding="0" className={cx("table tbl-data")}>
+                      <table
+                        cellSpacing="0"
+                        cellPadding="0"
+                        className={cx("table tbl-data")}
+                      >
                         <thead>
                           <tr>
-                            <th colSpan="2" className={cx("th-name")}>Statistical</th>
+                            <th colSpan="2" className={cx("th-name")}>
+                              Statistical
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td scope="row" className={cx("left")}>Battle</td>
+                            <td scope="row" className={cx("left")}>
+                              Battle
+                            </td>
                             <td>{player.statistics.match}</td>
                           </tr>
                           <tr>
-                            <td scope="row" className={cx("left")}>Yellow card</td>
+                            <td scope="row" className={cx("left")}>
+                              Yellow card
+                            </td>
                             <td>{player.statistics.yellow}</td>
                           </tr>
                           <tr>
-                            <td scope="row" className={cx("left")}>Red card</td>
+                            <td scope="row" className={cx("left")}>
+                              Red card
+                            </td>
                             <td>{player.statistics.red}</td>
                           </tr>
                           <tr>
-                            <td scope="row" className={cx("left")}>Assist</td>
+                            <td scope="row" className={cx("left")}>
+                              Assist
+                            </td>
                             <td>{player.statistics.assist}</td>
                           </tr>
                           <tr>
-                            <td scope="row" className={cx("left")}>Goal</td>
+                            <td scope="row" className={cx("left")}>
+                              Goal
+                            </td>
                             <td>{player.statistics.goal}</td>
                           </tr>
                         </tbody>
@@ -115,18 +163,24 @@ function Detail_player(props) {
                   </div>
                   <div className={cx("col-lg-6")}>
                     <div className={cx("stylized")}>
-                      <table cellSpacing="0" cellPadding="0" className={cx("table tbl-data")}>
+                      <table
+                        cellSpacing="0"
+                        cellPadding="0"
+                        className={cx("table tbl-data")}
+                      >
                         <thead>
                           <tr>
-                            <th colSpan="2" className={cx("th-name")}>Honor</th>
+                            <th colSpan="2" className={cx("th-name")}>
+                              Honor
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
-                        {player.achievements.map((i, j) => (
-                          <tr key={j}>
-                            <td>{i}</td>
-                          </tr>
-                        ))}
+                          {player.achievements.map((i, j) => (
+                            <tr key={j}>
+                              <td>{i}</td>
+                            </tr>
+                          ))}
                         </tbody>
                       </table>
                     </div>
@@ -135,8 +189,12 @@ function Detail_player(props) {
               </div>
             </div>
           </>
-        ) : (<h1 className={cx("text-danger container py-5")}>No players found!</h1>)}
-      </div> 
+        ) : (
+          <h1 className={cx("text-danger container py-5")}>
+            No players found!
+          </h1>
+        )}
+      </div>
     </>
   );
 }
