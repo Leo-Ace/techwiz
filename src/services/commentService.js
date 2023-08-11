@@ -3,7 +3,7 @@ import * as http from '../common/http-common';
 
 const URL = 'http://localhost:8000/comment';
 
-export const getAll = async () => {
+export const getAllComment = async () => {
   try {
     const data = await http.get(URL);
     return [null, data];
@@ -12,7 +12,7 @@ export const getAll = async () => {
   }
 }
 
-export const getById = async (id) => {
+export const getCommentById = async (id) => {
   try {
     const data = await http.get(`${URL}/${id}`);
     return [null, data];

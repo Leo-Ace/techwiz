@@ -1,0 +1,95 @@
+.name_club{ 
+    margin-top: 30px;
+    text-align: center;
+    top: 50px;
+    left: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.list_honours{
+    font-size: 22px;
+    font-weight: 600;
+}
+.tieu_de{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.cau_thu{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0);
+}
+.img_player>img {
+    transition: all 0.2s linear;
+    transform: scale(0.9);
+}
+.cau_thu :hover >.img_player>img{
+    transform: scale(1);
+    transition: 1s;
+}
+.cau_thu>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.img_player{
+    transition: 1s;
+}
+.img_player>img{
+    width: 100%;
+}
+.desc_player{
+    bottom: 0;
+    font-size: 35px;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    color: #000 !important;
+    transform: translateY(-10px);
+}
+
+.desc_player::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: rgb(253, 0, 0);
+    transition: all 0.3s linear;
+    z-index: -1;
+}
+
+.cau_thu :hover .desc_player {
+    transform: translateY(0);
+    /* color: #ff0000 !important; */
+}
+
+.cau_thu :hover .desc_player::after {
+    width: 100%;
+}
+
+.cau_thu :hover .location {
+    height: 100%;
+}
+
+.number {
+    top: 0;
+    right: 0;
+    color: red;
+    /* background-color: rgb(255, 0, 0); */
+    font-size: 45px;
+    font-weight: 700;
+}
+.number>p:first-child {
+    border-bottom: 4px solid red;
+}
+.location {
+    transition: all 0.3s linear;
+    height: 0;
+    overflow: hidden;
+    bottom: -60px;
+    right: 10px;
+}
+.description {
+    text-align: justify;
+}
