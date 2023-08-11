@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './detail_club.module.css';
 import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
-function Detail_club(props) {
+function DetailClub(props) {
     return (
         <div>
             <div className={cx("name_club")}>
@@ -170,4 +170,4 @@ function Detail_club(props) {
     );
 }
 
-export default Detail_club;
+export default DetailClub;

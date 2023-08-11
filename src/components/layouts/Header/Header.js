@@ -135,7 +135,7 @@ function Header() {
                         <ul className={cx("list-unstyled")}>
                           <li className={cx("nav-item")}>
                             <Link
-                              to={"/"}
+                              to={"/club/a/1"}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -160,6 +160,7 @@ function Header() {
                     </li>
                     <li className={cx("nav-item ml-2")}>
                       <Link
+                        to={'/team-table'}
                         className={cx("nav-link d-block text-white", "item")}
                       >
                         Team table
@@ -175,6 +176,7 @@ function Header() {
                     </li>
                     <li className={cx("nav-item ml-2")}>
                       <Link
+                        to={'/contact'}
                         className={cx("nav-link d-block text-white", "item")}
                       >
                         Contact Us
