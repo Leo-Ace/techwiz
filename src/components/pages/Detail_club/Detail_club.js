@@ -111,7 +111,7 @@ function DetailClub(props) {
                     </div>
                     <h2 className={cx("mt-5")}>DEFENDERS</h2>
                     <div className={cx("player row")}>
-                        {listPlayer.filter(item=>item.location === "LB" || item.location === "CMB" || item.location === "RB").map((item, index) => (
+                        {listPlayer.filter(item=>item.location === "LB" || item.location === "CMD" || item.location === "RB").map((item, index) => (
                             <div key={index} className={cx("col-lg-4 col-md-6 p-3")}>
                                 <div className={cx("cau_thu", "position-relative m-0")}>
                                     <Link to={`/player/${item.id}`} className={cx("")}>
