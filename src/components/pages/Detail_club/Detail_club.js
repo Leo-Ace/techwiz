@@ -6,11 +6,14 @@ const cx = classNames.bind(styles);
 function DetailClub(props) {
     return (
         <div>
+            <div className={cx("banner_club")}>
+                <img className={cx("w-100")} src='/images/banne_detailClub.gif' />
+            </div>
             <div className={cx("name_club")}>
                 <p>Manchester City</p>
             </div>
-            <div className={cx("banner_club")}>
-                <img className={cx("w-100")} src='/images/banner_club.webp' />
+            <div className={cx( "img_logo w-100 text-center")}>
+                <img src='/images/logo_Man_City.png'/>
             </div>
             <div className={cx("container")}>
                 <div className={cx("desc_club row my-5")}>
@@ -166,6 +169,10 @@ function DetailClub(props) {
                     </div>
                 </div>
             </div>
+           
+                <div className={cx("banner_club")}>
+                    <img className={cx("w-100")} src='/images/banner_club.webp' />
+                </div>  
         </div>
     );
 }
