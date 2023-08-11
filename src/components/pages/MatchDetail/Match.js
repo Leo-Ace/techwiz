@@ -9,7 +9,7 @@ function Match() {
       <div className={cx("time_match")} >
         <div className={cx("container ")} >
           <div className={cx("text-center")}>
-            <h2>Trực tiếp trận đấu Real Madrid và Manchester Ciy</h2>
+            <h2>Live match Real Madrid and Manchester Ciy</h2>
           </div>
           <div className={cx("row mb-2")} >
             <div className={cx("col-lg-6")}>
@@ -35,7 +35,7 @@ function Match() {
             </div>
           </div>
           <div className={cx("text-center")}>
-            <p className="blv">BLV: Giàng A Táo</p>
+            <p className="blv">BLV: Giàng A Lử</p>
             <p className="time">00:00 11/08/2023</p>
           </div>
         </div>
