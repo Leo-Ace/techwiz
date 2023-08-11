@@ -1,22 +1,11 @@
 /* eslint-disable no-use-before-define */
-import * as http from '../common/http-common';
+import { match } from "../../db";
 
-const URL = 'http://localhost:8000/match';
-
-export const getAll = async () => {
-  try {
-    const data = await http.get(URL);
-    return [null, data];
-  } catch (err) {
-    return [err, null];
-  }
+export const getAllMatch = () => {
+  return [null, match];
 }
 
-export const getById = async (id) => {
-  try {
-    const data = await http.get(`${URL}/${id}`);
-    return [null, data];
-  } catch (err) {
-    return [err, null];
-  }
+export const getMatchById = (id) => {
+  const result = match.find(item => item.id === id);
+  return [null, result]
 }

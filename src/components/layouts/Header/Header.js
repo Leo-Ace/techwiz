@@ -1,23 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./header.module.css";
 import logo from "../../../logo.png";
 import { Link } from "react-router-dom";
 import {
   BsChevronUp,
-  BsFacebook,
   BsFillCaretDownSquareFill,
-  BsPinterest,
   BsSearch,
-  BsTwitter,
 } from "react-icons/bs";
-import { FaFacebookF, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import $ from "jquery";
+import { getAllTeam } from "../../../services/teamService";
 
 const cx = classNames.bind(styles);
 
 function Header() {
+  const [team, setTeam] = useState([]);
+  
   const boxMenuMd = useRef();
   const headerElem = useRef();
   const iconScrollTop = useRef();
@@ -48,6 +48,15 @@ function Header() {
         iconScrollTop.current.setAttribute("style", ``);
       }
     };
+  }, []);
+
+  useEffect(() => {
+    const [err_team, dt_team] = getAllTeam();
+    if(err_team) {
+      throw Error('Error!');
+    } else {
+      setTeam(dt_team);
+    }
   }, []);
 
   const handleScrollTop = () => {
@@ -133,28 +142,19 @@ function Header() {
                         )}
                       >
                         <ul className={cx("list-unstyled")}>
-                          <li className={cx("nav-item")}>
-                            <Link
-                              to={"/club/a/1"}
-                              className={cx(
-                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
-                                "item"
-                              )}
-                            >
-                              Doiiiii 1
-                            </Link>
-                          </li>
-                          <li className={cx("nav-item")}>
-                            <Link
-                              to={"/"}
-                              className={cx(
-                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
-                                "item"
-                              )}
-                            >
-                              Doiiiii 2
-                            </Link>
-                          </li>
+                          {team.map((item, index) => (
+                            <li key={index} className={cx("nav-item")}>
+                              <Link
+                                to={`/club/${item.name}/${item.id}`}
+                                className={cx(
+                                  "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                                  "item"
+                                )}
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </li>
@@ -258,7 +258,7 @@ function Header() {
                         <ul className={cx("list-unstyled")}>
                           <li className={cx("nav-item")}>
                             <Link
-                              to={"/"}
+                              to={"/login"}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -269,7 +269,7 @@ function Header() {
                           </li>
                           <li className={cx("nav-item")}>
                             <Link
-                              to={"/"}
+                              to={"/register"}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -299,7 +299,7 @@ function Header() {
               "container d-flex flex-column align-items-center justify-content-center position-relative mt-5"
             )}
           >
-            <Link className={cx("navbar-brand", "col-4")} to={"/"}>
+            <Link className={cx("navbar-brand", "col-4")} to={"/"} onClick={() => dropdownMenu(false)}>
               <span
                 className={cx(
                   "col-md-6 p-0 m-0 d-block overflow-hidden rounded-circle"
@@ -317,6 +317,7 @@ function Header() {
                   <h5 className={cx("mb-0")}>
                     <Link
                       to={"/"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -362,28 +363,20 @@ function Header() {
                   data-parent="#accordion"
                 >
                   <div className={cx("card-body py-0", "box-menu")}>
-                    <div>
-                      <Link
-                        to={"/"}
-                        className={cx(
-                          "item",
-                          "text-decoration-none w-100 d-block text-dark p-2"
-                        )}
-                      >
-                        Doiii 1
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={"/"}
-                        className={cx(
-                          "item",
-                          "text-decoration-none w-100 d-block text-dark p-2"
-                        )}
-                      >
-                        Doiii 2
-                      </Link>
-                    </div>
+                    {team.map((item, index) => (
+                      <div key={index}>
+                        <Link
+                          to={`/club/${item.name}/${item.id}`}
+                          onClick={() => dropdownMenu(false)}
+                          className={cx(
+                            "item",
+                            "text-decoration-none w-100 d-block text-dark p-2"
+                          )}
+                        >
+                          {item.name}
+                        </Link>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -394,7 +387,8 @@ function Header() {
                 >
                   <h5 className={cx("mb-0")}>
                     <Link
-                      to={"/"}
+                      to={"/team-table"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -413,6 +407,7 @@ function Header() {
                   <h5 className={cx("mb-0")}>
                     <Link
                       to={"/about"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -430,7 +425,8 @@ function Header() {
                 >
                   <h5 className={cx("mb-0")}>
                     <Link
-                      to={"/"}
+                      to={"/contact"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -440,7 +436,7 @@ function Header() {
                       aria-expanded="true"
                       aria-controls="collapseFive"
                     >
-                      <span>Contact us</span>
+                      <span>Contact Us</span>
                     </Link>
                   </h5>
                 </div>
@@ -475,6 +471,7 @@ function Header() {
               <Link
                 to={"/login"}
                 className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
+                onClick={() => dropdownMenu(false)}
               >
                 Login
               </Link>
@@ -484,6 +481,7 @@ function Header() {
               <Link
                 to={"/register"}
                 className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
+                onClick={() => dropdownMenu(false)}
               >
                 Register
               </Link>

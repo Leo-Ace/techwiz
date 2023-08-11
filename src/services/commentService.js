@@ -1,22 +1,11 @@
 /* eslint-disable no-use-before-define */
-import * as http from '../common/http-common';
+import { comment } from "../../db";
 
-const URL = 'http://localhost:8000/comment';
-
-export const getAll = async () => {
-  try {
-    const data = await http.get(URL);
-    return [null, data];
-  } catch (err) {
-    return [err, null];
-  }
+export const getAllComment = () => {
+  return [null, comment];
 }
 
-export const getById = async (id) => {
-  try {
-    const data = await http.get(`${URL}/${id}`);
-    return [null, data];
-  } catch (err) {
-    return [err, null];
-  }
+export const getCommentById = (id) => {
+  const result = comment.find(item => item.id === id);
+  return [null, result]
 }
