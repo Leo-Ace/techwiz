@@ -178,7 +178,7 @@ export const player = [
     height: 199,
     weight: 96,
     location: "GK",
-    description: "",
+    description: "Thibaut Courtois joined the club Bilzen VV at the age of 5. He started playing as a left-back. Then, in 1999, he joined Racing Genk at the age of 7 and at the same time he switched to playing as a goalkeeper. On 17 April 2009, Thibaut Courtois joined Racing Genk's first team after finishing playing in the youth team. He gradually showed a brilliant form and thanks to that he became the main keeper of the team. On 16 July 2011, Genk agreed a fee with Chelsea club for the transfer of Thibaut Courtois for £7.9 million. Just a few days after moving to Chelsea, he was loaned to Atlético Madrid club. He helped ATM get the La Liga championship in 2013-2014.",
   },
   {
     id: 2,
@@ -198,7 +198,7 @@ export const player = [
     height: 182,
     weight: 68,
     location: "LB",
-    description: "",
+    description: "Camavinga joined Rennes' youth system when he was 11. He signed his first professional contract on 14 December 2018, at the age of 16 years and one month, becoming the youngest ever professional for the club at that time.[13] He made his professional debut for Rennes in a 3–3 Ligue 1 tie with Angers on 6 April 2019,[14] becoming the youngest player to ever play for Rennes' first team,[15] at 16 years and six months old. On 18 August 2019, Camavinga recorded an assist and was awarded the man of the match award in a 2–1 win against Paris Saint-Germain.[16] Hence, he became the youngest player to make an assist in Ligue 1, aged 16 years and 281 days.[17] He then won the UNFP Player of the Month award that month, to be the youngest player to achieve this feat.[18] He scored his first goal for Rennes in a 1–0 win against Lyon on 15 December 2019, in the 89th minute of the game.",
   },
   {
     id: 3,
@@ -222,7 +222,7 @@ export const player = [
     height: 180,
     weight: 78,
     location: "CMD",
-    description: "",
+    description: "Born in Vienna,[3] Alaba began his career with SV Aspern, his local club in Aspern, in the Vienna district Donaustadt, before joining the youth setup of FK Austria Wien at age 10. He rose through the ranks quickly, and in April 2008 he was named on the first-team substitutes' bench for an Austrian Bundesliga match.[10] He also played five times for Austria Wien's reserve team,[11] before leaving in summer 2008 to join German Bundesliga side Bayern Munich. He started out in Bayern's youth system, playing for the under 17 and under 19 teams, before being promoted to the reserve team for the 2009–10 season.[8] He made his debut in a 3. Liga match against Dynamo Dresden in August 2009[13] and scored his first professional goal for FC Bayern Munich II on 29 August 2009.[14] He was named in Bayern Munich's squad for the 2009–10 UEFA Champions League,[15] where he was assigned the shirt number 27. In January 2010, it was announced that Alaba would train with the first team for the rest of the 2009–10 season,[16] along with reserve teammates Diego Contento and Mehmet Ekici.",
   },
   {
     id: 4,
@@ -246,7 +246,7 @@ export const player = [
     height: 186,
     weight: 79,
     location: "CMD",
-    description: "",
+    description: "Born in Sertãozinho in the state of São Paulo, Militão began playing for São Paulo FC youth squads in 2010. He started in the first team for the 2016 Copa Paulista, and debuted on 2 July in a 2–1 loss at Ituano; the team from the state capital was playing in the tournament for its first time, with an U20 team.[6] He played 11 matches and scored 2 goals, the first being in a 4–0 home win over CA Juventus on 18 September that ensured qualification to the second round. Militão made his professional debut on 14 May 2017 in a 1–0 loss away to Cruzeiro, the opening match for the 2017 Campeonato Brasileiro Série A.[8] He made 22 appearances over the season as the club finished in 13th place, and was sent off on 12 November towards the end of a 1–1 draw at Vasco da Gama.[9] He contributed two goals over the campaign, starting by opening a 2–1 win at fellow strugglers Vitória on 17 September.[10]",
   },
   {
     id: 5,
@@ -266,7 +266,7 @@ export const player = [
     height: 173,
     weight: 73,
     location: "RB",
-    description: "",
+    description: "Carvajal was born in Leganés, a suburb of Madrid. He joined Real Madrid's youth system as a 10-year-old, and continued climbing through the ranks until reaching Real Madrid Castilla in 2010.[4] In his first season as a senior Carvajal was immediately cast in the reserve team's starting XI, also being the team's captain. In the following campaign, he fared even better (38 games and two goals, playoffs included), as the B's returned to Segunda División after a five-year absence.[5]",
   },
   {
     id: 6,
@@ -292,7 +292,7 @@ export const player = [
     height: 174,
     weight: 65,
     location: "LM",
-    description: "",
+    description: "Supported by his family, he participated in representative camps and trained in NK Zadar.[10][15] He was under tutelage of coach Domagoj Bašić and the head of the youth academy, Tomislav Bašić.[10] Tomislav Bašić, considered by Modrić as his sporting father,[25][29] said Modrić's father made him wooden shin guards because they had little money.[10][31][33] However, Modrić later denied the story.[12] Due to being considered too young and light, he was not signed by Croatian powerhouse Hajduk Split, the most representative football club in the region of Dalmatia.[10][15][35] After displaying some talent, including at a youth tournament in Italy,[25] Tomislav Bašić arranged Modrić's move to Dinamo Zagreb when Modrić was a 16-year-old in late 2001.[10][12][36] After a season with Dinamo Zagreb's youth side, Modrić was loaned in 2003 to Zrinjski Mostar in the Bosnian Premier League.[10][25] During this period, he established his versatile style of play and became the Bosnian Premier League Player of the Year at only the age of 18.[37] Modrić later said, Someone who can play in the Bosnian Premier League can play anywhere, referring to its physical nature.[37] The following year, he was loaned to Croatian side Inter Zaprešić. He spent one season there, helping the team to achieve second position in the Prva HNL[25][38] and a place in the preliminary round of the UEFA Cup. He also won the Croatian Football Hope of the Year award in 2004.[37] He returned to Dinamo Zagreb in 2005.[37]",
   },
   {
     id: 7,
@@ -312,7 +312,7 @@ export const player = [
     height: 183,
     weight: 76,
     location: "CM",
-    description: "",
+    description: "Kroos first played for local club Greifswalder SC, later transferring to the youth team of Hansa Rostock. Kroos moved to Bayern Munich's youth setup in 2006. Kroos was missing up to 40 days during the school year due to training. For the 2007–08 season, at the age of 17, Kroos was promoted to Bayern's senior team. He made an astounding start to his Bundesliga career, making his debut for Bayern on 26 September 2007 in a 5–0 defeat of Energie Cottbus and twice assisting Miroslav Klose goals within 18 minutes of his appearance as a substitute.[15] At the time of his debut, Kroos was the youngest player ever to represent Bayern in a professional match at 17 years, 265 days old, a record since broken by David Alaba in 2010.",
   },
   {
     id: 8,
@@ -332,7 +332,7 @@ export const player = [
     height: 183,
     weight: 76,
     location: "RM",
-    description: "",
+    description: "Valverde spent most of his youth career with Peñarol, where he quickly made an impression; he made his senior debut for the club in their first fixture of the 2015–16 season against Cerro.[4] He became part of the Uruguayan national youth teams and attracted the interest of European clubs like Arsenal, Barcelona, Chelsea and Real Madrid.",
   },
   {
     id: 9,
@@ -357,7 +357,7 @@ export const player = [
     height: 176,
     weight: 73,
     location: "ST",
-    description: "",
+    description: "Vinícius Junior's football career began in 2006, when his father took him to the branch offices of Flamengo, in the neighborhood of Mutuá, in São Gonçalo where he lived. His club document described him as a left-back. Hailing from a poor Catholic family,[12] Vinícius went to live in Abolição with his uncle, Ulisses, to shorten the distance to Ninho do Urubu (the Vultures' Nest). He started to receive financial aid from Flamengo as well as aid from entrepreneurs.[13] Between 2007 and 2010, Vinícius attended futsal classes at Flamengo's school in São Gonçalo at the Canto do Rio, a famous club located in the centre of Niterói.",
   },
   {
     id: 10,
@@ -381,7 +381,7 @@ export const player = [
     height: 185,
     weight: 81,
     location: "ST",
-    description: "",
+    description: "Benzema began his football career at his hometown club Bron Terraillon SC at the age of eight. While at the club, he was nicknamed Coco by friends and, after scoring two goals in an under-10 match against the Lyon youth academy, began attracting attention from the biggest club in the city.[11][12] According to Serge Santa Cruz, who was president of Bron Terraillon in the 1990s, Lyon officials had visited him directly in an attempt to sign the youngster; however, Santa Cruz refused.[13] After talking with Benzema's father, the club allowed the player to undergo a trial with Lyon.[13] Following the trial, Benzema officially joined Lyon and was inserted into the club's academy.[14]",
   },
   {
     id: 11,
@@ -401,7 +401,7 @@ export const player = [
     height: 174,
     weight: 64,
     location: "ST",
-    description: "",
+    description: "Born in Osasco, São Paulo, Rodrygo joined Santos' youth setup in 2011 at the age of ten, initially assigned to the futsal team.[2] In March 2017, with the first team regulars in Peru for a Copa Libertadores match against Sporting Cristal, he was called up to the first team by manager Dorival Júnior to complete training.[5] On 21 July 2017, Rodrygo signed his first professional contract, after agreeing to a five-year deal.[6] On 1 November, he was promoted to the main squad by interim manager Elano.[7]",
   },
   {
     id: 12,
@@ -428,7 +428,7 @@ export const player = [
     height: 193,
     weight: 91,
     location: "GK",
-    description: "",
+    description: "Born in Novo Hamburgo, Rio Grande do Sul,[14] Alisson joined Internacional's academy in 2002, aged ten.[10][15] Having progressed through the youth set up, he featured regularly with the under-23 side, before making his senior debut on 17 February 2013, starting in a 1–1 away draw against Cruzeiro-RS in the Campeonato Gaúcho championship.[16] His Série A debut followed on 25 August 2013 when he started in a 3–3 home draw against Goiás.[17] A backup to his brother Muriel and competing for second-choice with Agenor, he finished his first season with six appearances.[10]",
   },
   {
     id: 13,
@@ -453,7 +453,7 @@ export const player = [
     height: 178,
     weight: 64,
     location: "LB",
-    description: "",
+    description: "Focusing on his studies, Robertson was on the brink of starting university at undergraduate degree level before he was called up to the Queen's Park first team at the beginning of the 2012–13 season. He made his debut for the club in the Scottish Challenge Cup in a penalty shoot out win against Berwick Rangers,[11] and went on to make a total of forty appearances during the season,[12] helping the club to a third-place finish in the 2012–13 Scottish Third Division. His first goal for the club came in a 2–1 defeat to East Stirlingshire on 13 November 2012.[12]",
   },
   {
     id: 14,
@@ -482,7 +482,7 @@ export const player = [
     height: 195,
     weight: 92,
     location: "CMD",
-    description: "",
+    description: "Van Dijk initially struggled to break into Groningen's first team with club staff believing he was overtired after extensive playing time with Willem II's academy and reserve sides.[22] He made his professional debut for the club on 1 May 2011, coming on as a 72nd-minute substitute for Petter Andersson during a 4–2 victory against ADO Den Haag.[25] On 29 May, and against the same opposition, he made his first start for Groningen and scored his first professional goals, netting twice in a 5–1 win in a UEFA Europa League play-off match.[22]",
   },
   {
     id: 15,
@@ -502,7 +502,7 @@ export const player = [
     height: 192,
     weight: 93,
     location: "CMD",
-    description: "",
+    description: "Konaté grew up in the 11th arrondissement of Paris and played as a teen for Paris FC youth teams.[10] When he was 14, he left for Sochaux and joined their boarding academy at the age of 15.[11] He started his career as a striker before moving to the defence.[10] Konaté made his professional debut for Sochaux in a 1–0 Ligue 2 loss to Auxerre on 7 February 2017, at the age of 16.[12] After a successful debut season, with 12 games and 1 goal in half a season, Konaté joined RB Leipzig in the Bundesliga on 12 June 2017 on a five-year contract by free transfer.[13][14][15] Konaté scored his first Leipzig goal in a 4–0 win against Fortuna Düsseldorf.[16]",
   },
   {
     id: 16,
@@ -526,7 +526,7 @@ export const player = [
     height: 175,
     weight: 69,
     location: "RB",
-    description: "",
+    description: "Having previously taken part in Liverpool's pre-season tour of the United States, Alexander-Arnold made his professional debut on 25 October 2016, starting in a 2–1 victory over Tottenham Hotspur in the fourth round of the EFL Cup. He was booked in the first half for a foul on Ben Davies, which he later revealed could have ended in him being sent off, before being substituted for first-choice right-back Nathaniel Clyne in the 68th minute.[13][23][24] Despite the indiscretion, his performance earned a spot in the EFL Cup Team of the Round alongside teammate Daniel Sturridge.",
   },
   {
     id: 17,
@@ -549,7 +549,7 @@ export const player = [
     height: 175,
     weight: 70,
     location: "LB",
-    description: "",
+    description: "Milner's first-team debut for Leeds came on 10 November 2002, in a match against West Ham United, when he came on as a substitute for Jason Wilcox for the last six minutes.[20][21] The appearance made him the second-youngest player ever to play in the Premier League, at the age of 16 years and 309 days.[22] On 26 December 2002, at 16 years and 356 days, he became the youngest player to score in the Premier League, with a goal in a 2–1 win against Sunderland.[16][23] His record was broken by James Vaughan of Everton in 2005.[24] In a match against Chelsea two days later, Milner scored again, with a deft first touch of the ball and manoeuvre, to avoid a tackle from Chelsea defender Marcel Desailly.[25] The manoeuvre created a yard of space for him to deliver a curling shot from 18 yards (16 m).[25] Reporters were impressed by his overall performance in the match, especially by his desire, confidence, and ability with both feet.[26] Chelsea manager Claudio Ranieri remarked after the match that Milner had performed like a much more experienced player.[27] The performance prompted comparisons to England internationals Michael Owen and Wayne Rooney, who had also come to footballing prominence as teenagers.",
   },
   {
     id: 18,
@@ -569,7 +569,7 @@ export const player = [
     height: 188,
     weight: 78,
     location: "CM",
-    description: "",
+    description: "Fabinho began his career at Fluminense. He was called into a first team matchday squad for the only time on 20th of May 2012, as he was an unused substitute in a 1–0 win over Corinthians for the season's Série A.[29] On 8 June 2012, Fabinho joined Portuguese Primeira Liga club Rio Ave on a six-year contract.[30] Upon arriving in Vila do Conde, Fabinho was greeted by his new manager, Nuno Espírito Santo.[31] Fabinho later stated that he had been informed of what to expect in Portugal by fellow footballer Deco, who had been with him at Fluminense.",
   },
   {
     id: 19,
@@ -592,7 +592,7 @@ export const player = [
     height: 193,
     weight: 76,
     location: "RM",
-    description: "",
+    description: "For the 2016–17 season Gakpo was part of the reserve team Jong PSV for the first time, but mainly featured in the U19 team. Gakpo made his professional debut in the Eerste Divisie for Jong PSV on 4 November 2016 in a game against Helmond Sport.[6] In the rest of the season he only made one more appearance for Jong PSV. After his production increased in the following season's U19 Eredivisie with seven goals and five assists in 13 league games, he was finally promoted to the reserves at the turn of the year. In his second appearance in the second-tier Eerste Divisie, on 19 January 2017 in a 3–2 away win against De Graafschap, he scored a brace and made the assist for the third goal of his team.[7] For Jong PSV, he managed to score seven goals in the 2017–18 season, which he achieved in 12 league games.[8]",
   },
   {
     id: 20,
@@ -619,7 +619,7 @@ export const player = [
     height: 187,
     weight: 78,
     location: "ST",
-    description: "",
+    description: "He made his first-team debut in the Primera División on 22 November 2017, when he came on for Peñarol as a second-half substitute for Maxi Rodríguez in a 2–1 away loss against River Plate Montevideo.[7] The following month, he had knee surgery for a second time.[6] Núñez scored his first professional goal on 13 October 2018, with the opener in a 2–0 home win over Fénix.[8] On 14 July 2019, he scored a hat-trick in a 4–0 victory against Boston River.[9]",
   },
   {
     id: 21,
@@ -639,7 +639,7 @@ export const player = [
     height: 178,
     weight: 68,
     location: "ST",
-    description: "",
+    description: "Born in Porto,[8] Jota joined Paços de Ferreira's youth setup in 2013, from Gondomar.[citation needed] He was promoted to the main squad at the start of the 2014–15 season, and made his senior debut on 19 October 2014 by starting in a 4–0 home win against Atlético de Reguengos for the Taça de Portugal.[9]",
   },
   {
     id: 22,
@@ -669,7 +669,7 @@ export const player = [
     height: 175,
     weight: 71,
     location: "ST",
-    description: "",
+    description: "Salah started out playing for the youth setups of local teams Ittihad Basyoun and Othmason Tanta.[30] He names Ronaldo, Zinedine Zidane and Francesco Totti as his childhood idols.[31] In 2006, he joined the youth team of Al Mokawloon aged 14 after being spotted by a scout who had originally come to watch another child play but was distracted by Salah.[32][33] Salah frequently had to miss school to make the 3 hour journey to training.[31] When Salah was 15 he was noticed by then first team manager Mohamed Radwan, who moved him to the senior squad immediately. Salah had to be given a special diet and training program due to his muscles not being fully formed because of his young age.[34]",
   },
   {
     id: 23,
@@ -695,7 +695,7 @@ export const player = [
     height: 190,
     weight: 93,
     location: "GK",
-    description: "",
+    description: "Born in Nkol Ngok,[4] Onana joined Barcelona from the Samuel Eto'o Academy at the age of 14 in 2010.[5][6] Because he was under 18 and a non-EU citizen, Onana had to go on loan in the 2012–13 season to the youth team of Cornellà, before being loaned again the next season to the first-team of Vista Alegre.[7] In early January 2015, it was announced that he would join Dutch club Ajax in July 2015.[8] The transfer was brought forward later that month.[9][10][11] He made his debut for Jong Ajax in the Eerste Divisie in February 2015.[12] He signed a new contract with Ajax in May 2017, running until 2021.[13] In March 2019 he signed a further new contract, until June 2022.[14] In November 2019, he said he was interested in playing in the Premier League in England.[15]",
   },
   {
     id: 24,
@@ -718,7 +718,7 @@ export const player = [
     height: 185,
     weight: 75,
     location: "LB",
-    description: "",
+    description: "In 2002, Shaw joined the Southampton Academy at the age of seven,[12] and became a regular in the under-18 team from the age of 15.[13] His first association with the first team came in September 2011, when he was an unused substitute in a League Cup match against Preston North End.[13] During the January 2012 transfer window, it was reported that Premier League clubs Arsenal, Chelsea, and Manchester City had shown interest in signing 16-year-old Shaw, with the then-Championship club reportedly valuing the defender at £4 million.[14] Southampton quickly responded to such claims though, with then-manager Nigel Adkins assuring the media that Luke Shaw is a big part of our future plans, and claiming that the club had no intention … of letting any of [their] young players move on.[15]",
   },
   {
     id: 25,
@@ -738,7 +738,7 @@ export const player = [
     height: 178,
     weight: 77,
     location: "CMD",
-    description: "",
+    description: "Martínez has spent time with the youth teams Club Urquiza (Gualeguay, Entre Rios), Club Libertad (Gualeguay, Entre Rios) and Newell's Old Boys.[3][4] He made his professional debut for Newell's in the club's final game of the 2016–17 season, when he played the full match in a loss to Godoy Cruz.[5][6]",
   },
   {
     id: 26,
@@ -765,7 +765,7 @@ export const player = [
     height: 191,
     weight: 81,
     location: "CMD",
-    description: "",
+    description: "Varane was born in the city of Lille in the Nord-Pas-de-Calais region. He is of Martiniquais heritage through his father, Gaston, who is originally from Le Morne-Rouge, while his mother, Annie, was raised in Saint-Amand-les-Eaux.[9] Varane began his football career in the Arrondissement of Lille playing for local club AS Hellemmes at the age of seven.[10] After spending two years at the club, in July 2002, he joined professional club RC Lens, despite some interest from Derby du Nord rivals and hometown club Lille OSC.[11] Similar to the development of the club's previous prized assets such as Gaël Kakuta and Timothée Kolodziejczak, Varane spent time at the Centre de Préformation de Football in nearby Liévin, a training centre exclusively for players brought up in the Nord-Pas-de-Calais region.[9] He spent two years at the centre training there during the weekdays and playing with Lens on the weekends.",
   },
   {
     id: 27,
@@ -788,7 +788,7 @@ export const player = [
     height: 183,
     weight: 72,
     location: "RB",
-    description: "",
+    description: "On the 2017 pre-season tour, Wan-Bissaka began to feature with the Palace first team under new manager Frank de Boer, playing in a number of friendlies. The Dutchman played a formation with wing-backs, and this new role emphasised Wan-Bissaka's defensive capabilities, eventually leading to him moving from a winger to a full-back.[8] However, he saw chances limited in the first half of the season as De Boer showed a preference to play Timothy Fosu-Mensah or Martin Kelly at right-back, then new manager Roy Hodgson favoured Joel Ward. He was an unused substitute a few times under the new manager, while also starring for the Eagles U23 side.",
   },
   {
     id: 28,
@@ -808,7 +808,7 @@ export const player = [
     height: 175,
     weight: 70,
     location: "LM",
-    description: "",
+    description: "Mainoo made great strides and was a part of United's Under-21 squad for the EFL Trophy before being scouted by Manchester United manager Erik ten Hag and called up to United's first team.[6 ] He made his club debut on 10 January 2023 when he was included in the starting line-up in an FA Cup match against Charlton Athletic F.C. (United won 3-0) as a playmaker (No. 10).[7] On 28 January 2023, he made his second United appearance of the season as a substitute for Casemiro in an EFL Cup match against Reading F.C. at Old Trafford.",
   },
   {
     id: 29,
@@ -828,7 +828,7 @@ export const player = [
     height: 185,
     weight: 84,
     location: "CM",
-    description: "",
+    description: "Born in São José dos Campos, São Paulo, Casemiro was a product of São Paulo's youth system. From the age of 11 upwards, he acted as captain to its sides;[12][13] he was known as Carlão – an augmentative form of his first name in Portuguese – early on, and would be called up for the 2009 FIFA U-17 World Cup.[14] Casemiro made his Série A debut on 25 July 2010, in an away loss against Santos. He scored his first goal as a professional on 15 August, helping to a 2–2 draw with Cruzeiro.[15]",
   },
   {
     id: 30,
@@ -875,7 +875,7 @@ export const player = [
     height: 179,
     weight: 69,
     location: "ST",
-    description: "",
+    description: "In October 2020, he joined the Manchester United Academy.[3] United paid Atlético a £420,000 fee.[4] He signed his first professional contract with the club in July 2021.[4], He came under the spotlight for his solo goal in the FA Youth Cup win over Everton, which was nominated for United's Goal of the Month award for February 2022.[5] After being named as an unused substitute for several Premier League matches, Garnacho made his first-team debut for United on 28 April, replacing Anthony Elanga in the 91st minute of a 1–1 draw against Chelsea.[6] Garnacho won the Jimmy Murphy Young Player of the Year award in May.[7] He scored twice in the final of the FA Youth Cup against Nottingham Forest on 11 May, helping United win the competition for the first time since 2011.[8]",
   },
   {
     id: 32,
@@ -902,7 +902,7 @@ export const player = [
     height: 181,
     weight: 76,
     location: "ST",
-    description: "",
+    description: "At age 18, Mount was promoted to Chelsea's senior team;[11] he previously debuted for the club's under-18 team in 2014, at age 15, and also appeared consistently for the club's under-21 team by 2016. Mount scored 10 goals in 30 games in the club's victorious 2016–17 U18 Premier League campaign.[12] He also won two FA Youth Cups, the UEFA Youth League, and Chelsea Academy Player of the Year by 2017.",
   },
   {
     id: 33,
@@ -929,7 +929,7 @@ export const player = [
     height: 180,
     weight: 70,
     location: "ST",
-    description: "",
+    description: "Rashford began playing football for Fletcher Moss Rangers at the age of five,[21] starting out as a goalkeeper, and cited former United goalkeeper Tim Howard as his goalkeeping idol.[22][23] Fletcher Moss Rangers academy development officer Dave Horrocks recalls that Rashford was on a different level to other boys, playing a major role as the team won a tournament with 15 scouts from various clubs watching.[24]",
   },
   {
     id: 34,
@@ -949,7 +949,7 @@ export const player = [
     height: 188,
     weight: 86,
     location: "GK",
-    description: "",
+    description: "Born in Osasco, São Paulo, Ederson started his football career in 2008 at local club São Paulo FC with whom he played one season, before joining Benfica in Portugal. At the age of 16, he spent two years as a junior before being released in 2011 and eventually signing for Second Division club Ribeirão.[4] A year later, Ederson joined Primeira Liga club Rio Ave, signing a contract until 2014 in summer 2012. In April 2015, following a string of good performances and a call up to the Brazil under-23 squad, he signed a new contract with the club that would last until 2019.[5]",
   },
   {
     id: 35,
@@ -973,7 +973,7 @@ export const player = [
     height: 187,
     weight: 91,
     location: "LB",
-    description: "",
+    description: "Akanji began his youth career with the local club in Wiesendangen. In May 2007, Akanji changed clubs and was a youth-team player for FC Winterthur, featuring for their Under-18 team and later with their second team. In the 2014–15 Challenge League, he became a regular starter for Winterthur having played two games for them during the second half of the 2013–14 season.",
   },
   {
     id: 36,
@@ -1002,7 +1002,7 @@ export const player = [
     height: 187,
     weight: 82,
     location: "CMD",
-    description: "",
+    description: "Dias started his career at local club Estrela da Amadora after being brought to the club by a close family member.[11] Dias initially played as a striker, before switching to defence, due to his team being losing by two goals during a match.[12][13] Before moving to Benfica's youth academy in 2008, where he played initially as a midfielder, before to central defence for the junior side until 2015.[12] In the same year, on 30 September, he made his professional debut with Benfica B in a 2015–16 LigaPro match against Chaves.[14] On 7 March 2016, Rui Vitória called 18-year-old Dias for Benfica's UEFA Champions League Round of 16-second leg tie against Zenit Saint Petersburg after three of his four main centre-backs were unable to make the trip to Russia.[15] The following season he helped the B team finish fourth; the club's highest ever position obtained in the second division. He also helped the junior team reach the final of the 2016–17 UEFA Youth League.[16]",
   },
   {
     id: 37,
@@ -1027,7 +1027,7 @@ export const player = [
     height: 183,
     weight: 83,
     location: "RB",
-    description: "",
+    description: "Walker joined boyhood club Sheffield United[15] at the age of seven after being recommended by coach Paul Archer at Football Unites, Racism Divides. Walker progressed through the ranks to become a regular fixture in the reserve team by 2008.[13] In November 2008, he was allowed to join League One club Northampton Town on a one-month loan to gain first-team experience,[16] making his debut on 15 November 2008 in a defeat by Oldham Athletic.[17] His one-month loan was later extended into January,[18] before he eventually returned to Bramall Lane having played nine matches for the Cobblers.[19]",
   },
   {
     id: 38,
@@ -1051,7 +1051,7 @@ export const player = [
     height: 191,
     weight: 82,
     location: "LM",
-    description: "",
+    description: "Born in Madrid,[5] Rodri joined Atlético Madrid's youth setup in 2007 aged 11, from CF Rayo Majadahonda.[6] Released in 2013 due to a lack of physical strength, he subsequently signed with Villarreal CF.[7][8] On 7 February 2015, while still a junior, Rodri made his senior debut for the reserves, coming on as a late substitute in a 3–1 away win against RCD Espanyol B in the Segunda División B.[9] He was handed his first start 15 days later, in a 2–0 victory at Real Zaragoza B.[10]Rodri made his first-team debut on 17 December 2015, starting in a 2–0 home win against SD Huesca for that season's Copa del Rey.[11] His first La Liga appearance was on 17 April 2016, when he came on as a second-half substitute for Denis Suárez in a 2–1 away loss to Rayo Vallecano.[12]",
   },
   {
     id: 39,
@@ -1076,7 +1076,7 @@ export const player = [
     height: 188,
     weight: 70,
     location: "CM",
-    description: "",
+    description: "Stones came through the Barnsley youth academy to sign a professional contract in December 2011.[18] He made his first-team debut in the Championship on 17 March 2012, in a 4–0 defeat to Reading at Oakwell, replacing Scott Wiseman after 52 minutes.[19] He scored his only goal for Barnsley on his first start, equalising before half time in a League Cup first round match away to Rochdale on 11 August 2012, which resulted in a 4–3 victory after extra time.[20] A week later, he made his first league start, in a 1–0 victory against Middlesbrough.[21]",
   },
   {
     id: 40,
@@ -1100,7 +1100,7 @@ export const player = [
     height: 180,
     weight: 81,
     location: "CM",
-    description: "",
+    description: "Having started at Highgate United,[25] Grealish, a lifelong Aston Villa fan, joined the club as a six-year-old.[21][22][26] At the age of 16, he was named as an unused substitute in a 4–2 home Premier League defeat against Chelsea on 31 March 2012.[27] Grealish was part of the club's under-19 team that won the 2012–13 NextGen Series,[28] scoring in a 3–1 extra-time win over Sporting CP in the semi-final.",
   },
   {
     id: 41,
@@ -1126,7 +1126,7 @@ export const player = [
     height: 171,
     weight: 70,
     location: "RM",
-    description: "",
+    description: "Born on 28 May 2000 in Stockport, Greater Manchester, Foden was a boyhood supporter of Manchester City.[7] He joined the club at the age of four and signed his Academy scholarship in July 2016.[8] He was privately educated at St Bede's College, with his tuition fees being paid for by Manchester City.[9][10] On 6 December 2016, City head coach Pep Guardiola included Foden in the matchday squad for the Champions League group stage match with Celtic; he was an unused substitute in the 1–1 home draw.[11]",
   },
   {
     id: 42,
@@ -1155,7 +1155,7 @@ export const player = [
     height: 181,
     weight: 68,
     location: "ST",
-    description: "",
+    description: "De Bruyne began his career with hometown club KVV Drongen in 1997. Two years later, he joined Gent and moved to Genk in 2005. De Bruyne continued his development in their youth set-up and was rewarded for his progress by being promoted to the first team squad in 2008. From an Interview with his youth club, it was revealed that De Bruyne was a Liverpool fan and admirer of Michael Owen.[7]",
   },
   {
     id: 43,
@@ -1179,7 +1179,7 @@ export const player = [
     height: 173,
     weight: 64,
     location: "ST",
-    description: "",
+    description: "A product of S.L. Benfica's youth system, Silva played for its ranks, and in 2013 they won the 2012–13 Portuguese Juniors Championship.[5] He made his debut for Benfica B in a Segunda Liga match against Trofense on 10 August 2013 (Matchday 1).[6] On 19 October 2013, Silva made his debut for Benfica at the age of 19, in a 2013–14 Taça de Portugal third round 1–0 away victory against Campeonato Nacional de Seniores club C.D. Cinfães, coming out of the bench in the 80th minute.[7] His good performance for Benfica B in the 2013–14 Segunda Liga earned him the league's Breakthrough Player of the Year award.[8] He was a member of Benfica's domestic treble-winning team of the 2013–14 season, playing only 31 minutes in a total of three matches.",
   },
   {
     id: 44,
@@ -1211,7 +1211,7 @@ export const player = [
     height: 195,
     weight: 94,
     location: "ST",
-    description: "",
+    description: "Haaland started in the academy of his hometown club Bryne at the age of five.[17][18] During the 2015–16 season, he played for Bryne's reserve team and impressed, scoring 18 goals in 14 matches.[19] In May 2016, Gaute Larsen was sacked as Bryne manager and youth coach Berntsen was promoted to caretaker boss. Having worked closely with Haaland in other youth teams, the interim manager handed the teenager his first start, three months before his 16th birthday.[20][18] His debut was a second-tier 1. divisjon match against Ranheim on 12 May.[21]",
   },
   {
     id: 45,
@@ -1240,7 +1240,7 @@ export const player = [
     height: 187,
     weight: 85,
     location: "GK",
-    description: "",
+    description: "Ter Stegen began his career at hometown team Borussia Mönchengladbach. In the first half of the 2010–11 season, he established himself as the star of their reserve team and was frequently seen on the first-team bench. Whilst he was enjoying a relatively successful season, the same could not be said for his first-team colleagues.[16] Mönchengladbach's senior side were seemingly failing in their efforts to avoid relegation, and on 14 February 2011, manager Michael Frontzeck was replaced by Lucien Favre, with the team rooted to the bottom of the Bundesliga, having accumulated only 16 points after 22 match days.[17]",
   },
   {
     id: 46,
@@ -1260,7 +1260,7 @@ export const player = [
     height: 175,
     weight: 69,
     location: "LB",
-    description: "",
+    description: "Born in Barcelona, Catalonia, to a Bissau-Guinean father and a Dominican mother,[3] Balde joined FC Barcelona in 2011 at the age of eight after coming up through ranks at RCD Espanyol.[4] In July 2021, he signed a contract renewal with Barcelona until 2024 with a release clause of 500 million euros.[5] Balde impressed during pre-season in the summer 2021, and began the new campaign as Jordi Alba's primary back-up at Camp Nou.[6] He sat on the bench for the opening match against Real Sociedad[7] and the next game against Athletic Bilbao.[8]On 14 September 2021, he played his first official match for Barcelona's first team replacing Alba in the 74th minute of a 3–0 loss to Bayern Munich in the group stage of the UEFA Champions League.[9]",
   },
   {
     id: 47,
@@ -1284,7 +1284,7 @@ export const player = [
     height: 188,
     weight: 78,
     location: "CMD",
-    description: "",
+    description: "Christensen was born in Lillerød, Allerød Municipality.[4] The son of former Brøndby goalkeeper Sten Christensen, he began his career with Skjold Birkerød and later joined Brøndby. He spent eight years there, attracting the interest of Europe's elite clubs including Arsenal, Chelsea, Manchester City, and Bayern Munich. On 7 February 2012, Christensen signed for Chelsea on a free transfer, near the end of André Villas-Boas' tenure as the club's manager. Upon joining the London side, Christensen said: I have chosen Chelsea because they play the kind of football I like.[5]",
   },
   {
     id: 48,
@@ -1304,7 +1304,7 @@ export const player = [
     height: 180,
     weight: 75,
     location: "CMD",
-    description: "",
+    description: "Koundé started in his first team debut for Bordeaux in the 2–1 Coupe de France away loss to US Granville in the round of 64 on 7 January 2018, playing the full 90 minutes of normal time and the full 30 minutes of extra time.[3] He started in his Ligue 1 debut for Bordeaux in a 1–0 away win over Troyes on 13 January 2018.[4] On 10 February 2018, Koundé scored the opening goal of a 3–2 Ligue 1 home win over Amiens; it was his first career Ligue 1 goal and his first competitive goal for Bordeaux's first team.[5]",
   },
   {
     id: 49,
@@ -1328,7 +1328,7 @@ export const player = [
     height: 192,
     weight: 91,
     location: "RB",
-    description: "",
+    description: "Born to a Uruguayan father and a Brazilian mother in Rivera, a city near the Brazil border,[4][5][6] Araújo joined Rentistas from hometown club Huracán de Rivera.[7] He made his senior debut with the former on 24 September 2016, coming on as a late substitute in a 1–0 Segunda División away win against Tacuarembó. Araújo scored his first senior goal on 9 December 2016, netting the equaliser in a 2–2 home draw against Central Español. He became a regular starter during the 2017 season, and scored a hat-trick in a 3–2 away win over Villa Española on 17 June of that year.[8]",
   },
   {
     id: 50,
@@ -1354,7 +1354,7 @@ export const player = [
     height: 180,
     weight: 74,
     location: "LM",
-    description: "",
+    description: "A product of Willem II, de Jong played through the entire youth system at the club. On 10 May 2015, De Jong made his Eredivisie debut against ADO Den Haag, two days before his eighteenth birthday. He was substituted in the 68th minute for Terell Ondaan in a (1–0) home win.[14][15]",
   },
   {
     id: 51,
@@ -1383,7 +1383,7 @@ export const player = [
     height: 189,
     weight: 76,
     location: "CM",
-    description: "",
+    description: "Born in Sabadell, Barcelona, Catalonia, Busquets began playing football with local team CD Badia del Vallès,[6] followed by spells with CEF Barberà Andalucía, Lleida and UFB Jàbac Terrassa,[7] before joining Barcelona's youth ranks in 2005.[8] He scored seven goals in 26 games for the Juvenil A team in his second season and, two years later, Busquets was promoted to the B team under Pep Guardiola, and helped them achieve promotion to the third division.[9][10] In that same season he would make his first-team debut, coming on as a substitute in the Copa Catalunya.[11]",
   },
   {
     id: 52,
@@ -1408,7 +1408,7 @@ export const player = [
     height: 178,
     weight: 68,
     location: "RM",
-    description: "",
+    description: "Born in Reus, Tarragona, Catalonia, Roberto began playing football with local UE Barri Santes Creus at the age of 8,[5][6] arriving in Barcelona's youth academy six years later from neighbours Gimnàstic de Tarragona.[7] In the 2009–10 season, at only 17, he first appeared with Barça's reserves, contributing 29 appearances as they returned to the Segunda División after 11 years.[8]",
   },
   {
     id: 53,
@@ -1432,7 +1432,7 @@ export const player = [
     height: 173,
     weight: 68,
     location: "ST",
-    description: "",
+    description: "Born in Los Palacios y Villafranca, Andalusia, Gavi started at La Liara Balompié, a local club, and from there he moved to Real Betis' youth academy. Scoring 95 goals for Real Betis' youth team, Gavi was sought after by top Spanish teams, including Villarreal, Real Madrid and Atlético Madrid.",
   },
   {
     id: 54,
@@ -1463,7 +1463,7 @@ export const player = [
     height: 185,
     weight: 81,
     location: "ST",
-    description: "",
+    description: "Lewandowski was born in Warsaw[10] and grew up in Leszno, Warsaw West County.[11] He took his first steps in football as an unregistered player for the local club, Partyzant Leszno.[12] In 1997, he joined MKS Varsovia Warsaw, where as a teen he played for seven years.[13] The following year he moved to 4th tier side Delta Warsaw, where he finally managed to play in the first team, scoring four goals at the end of the season.[14]",
   },
   {
     id: 55,
@@ -1483,7 +1483,7 @@ export const player = [
     height: 176,
     weight: 58,
     location: "ST",
-    description: "",
+    description: "After unsuccessful trials with International and Grêmio, Raphinha started his career playing youth football with Imbituba, where he was later scouted by Avaí.[7] At 18 years old, Raphinha started his career with the Avaí's under-20 team in the Campeonato Brasileiro Série A in 2014.[6][4] After being injured, he was unable to make the squad but continued to train on his own.[4] Despite growing interest in Raphinha from many of Brazil's top clubs, Avaí kept hold of him until 2016, where he impressed at the Copa São Paulo de Futebol Júnior.[7]",
   },
 ];
 
