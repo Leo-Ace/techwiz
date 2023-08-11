@@ -82,7 +82,7 @@ function Footer(props) {
               <div className={cx("footer_title")}>Recent Post</div>
               <div className={cx("desc row")}>
                 <div className={cx("col-lg-3 anh")}>
-                  <img src='/images/footer-post.jpg' width={60} height={60} />
+                  <img src='/images/footer-post.jpg' width={60} height={60} alt="" />
                 </div>
                 <div className='desc_text col-lg-9'>
                   <p>Lorem ipsum dolor amet, conse-ctetur adipiscing.</p>
@@ -91,7 +91,7 @@ function Footer(props) {
               <div className={cx("line")}></div>
               <div className={cx("desc row")}>
                 <div className={cx("col-lg-3 anh")}>
-                  <img src='/images/footer-post-2.jpg' width={60} height={60} />
+                  <img src='/images/footer-post-2.jpg' width={60} height={60} alt="" />
                 </div>
                 <div className='desc_text col-lg-9'>
                   <p>Lorem ipsum dolor amet, conse-ctetur adipiscing.</p>
@@ -100,7 +100,7 @@ function Footer(props) {
               <div className={cx("line")}></div>
               <div className={cx("desc row")}>
                 <div className={cx("col-lg-3 anh")}>
-                  <img src='/images/footer-post.jpg' width={60} height={60} />
+                  <img src='/images/footer-post.jpg' width={60} height={60} alt="" />
                 </div>
                 <div className='desc_text col-lg-9'>
                   <p>Lorem ipsum dolor amet, conse-ctetur adipiscing.</p>
@@ -137,7 +137,7 @@ function Footer(props) {
         </div>
       </footer>
       <div className={cx("copyright")}>
-        <p>Copyright © 2023. Made with from Bkap</p>
+        <p>Copyright © 2023. Made with from SoccerVerse</p>
       </div>
     </>
   );

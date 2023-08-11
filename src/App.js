@@ -9,6 +9,7 @@ import Club from './components/pages/Detail_club/Detail_club';
 import Contact from './components/pages/Contact/Contact';
 import Login from './components/pages/Login/Login';
 import Register from './components/pages/Register/Register';
+import DetailMatch from './components/pages/MatchDetail/Match';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path='/player/:id' element={<Main children={<Detailplayer />} />} />
         <Route path='/club/:name/:id' element={<Main children={<Club/>} />} />
         <Route path='/team-table' element={<Main children={<Squad />} />} />
-        <Route path='/match/:id' element={<Main children={<Squad />} />} />
+        <Route path='/match/:id' element={<Main children={<DetailMatch />} />} />
         <Route path='/about' element={<Main children={<About />} />} />
         <Route path='/contact' element={<Main children={<Contact />} />} />
         <Route path='/login' element={<Main children={<Login/>} />} />
