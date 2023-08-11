@@ -3,7 +3,7 @@ import * as http from '../common/http-common';
 
 const URL = 'http://localhost:8000/wishlist';
 
-export const getAll = async () => {
+export const getAllAccount = async () => {
   try {
     const data = await http.get(URL);
     return [null, data];
@@ -12,7 +12,7 @@ export const getAll = async () => {
   }
 }
 
-export const getById = async (id) => {
+export const getAccountById = async (id) => {
   try {
     const data = await http.get(`${URL}/${id}`);
     return [null, data];
@@ -21,7 +21,7 @@ export const getById = async (id) => {
   }
 }
 
-export const create = async (data) => {
+export const createAccount = async (data) => {
   try {
     const data = await http.post(URL, data);
     return [null, data];
@@ -30,7 +30,7 @@ export const create = async (data) => {
   }
 }
 
-export const update = async (id, data) => {
+export const updateAccount = async (id, data) => {
   try {
     const data = await http.put(`${URL}/${id}`, data);
     return [null, data];
@@ -39,7 +39,7 @@ export const update = async (id, data) => {
   }
 }
 
-export const deleteUser = async (id) => {
+export const deleteAccount = async (id) => {
   try {
     const data = await http.remove(`${URL}/${id}`);
     return [null, data];

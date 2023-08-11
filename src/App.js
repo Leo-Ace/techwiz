@@ -13,7 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Main children={<Home />} />} />
-        <Route path='player/Detail_player' element={<Main children={<Detail_player />} />} />
+        <Route path='player/:id' element={<Main children={<Detail_player />} />} />
         <Route path='/team-table' element={<Main children={<Squad/>} />} />
         <Route path='/home/match' element={<Main children={<Match/>} />} />
         <Route path='/about' element={<Main children={<About />} />} />

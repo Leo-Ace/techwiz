@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./header.module.css";
 import logo from "../../../logo.png";
@@ -14,10 +14,15 @@ import {
 import { FaFacebookF, FaUser } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import $ from "jquery";
+import { MainData } from "../Main";
+import { getAllTeam } from "../../../services/teamService";
 
 const cx = classNames.bind(styles);
 
 function Header() {
+  // const { team } = useContext(MainData); 
+  const [team, setTeam] = useState([]);
+  
   const boxMenuMd = useRef();
   const headerElem = useRef();
   const iconScrollTop = useRef();
@@ -48,6 +53,19 @@ function Header() {
         iconScrollTop.current.setAttribute("style", ``);
       }
     };
+  }, []);
+
+  useEffect(() => {
+    const start = async () => {
+      // team
+      const [err_team, dt_team] = await getAllTeam();
+      if(err_team) {
+        throw Error('Error!');
+      } else {
+        setTeam(dt_team);
+      }
+    }
+    start();
   }, []);
 
   const handleScrollTop = () => {
@@ -133,28 +151,19 @@ function Header() {
                         )}
                       >
                         <ul className={cx("list-unstyled")}>
-                          <li className={cx("nav-item")}>
-                            <Link
-                              to={"/club/a/1"}
-                              className={cx(
-                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
-                                "item"
-                              )}
-                            >
-                              Doiiiii 1
-                            </Link>
-                          </li>
-                          <li className={cx("nav-item")}>
-                            <Link
-                              to={"/"}
-                              className={cx(
-                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
-                                "item"
-                              )}
-                            >
-                              Doiiiii 2
-                            </Link>
-                          </li>
+                          {team.map((item, index) => (
+                            <li key={index} className={cx("nav-item")}>
+                              <Link
+                                to={`/club/${item.name}/${item.id}`}
+                                className={cx(
+                                  "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                                  "item"
+                                )}
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </li>
@@ -258,7 +267,7 @@ function Header() {
                         <ul className={cx("list-unstyled")}>
                           <li className={cx("nav-item")}>
                             <Link
-                              to={"/"}
+                              to={"/login"}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -269,7 +278,7 @@ function Header() {
                           </li>
                           <li className={cx("nav-item")}>
                             <Link
-                              to={"/"}
+                              to={"/register"}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -363,30 +372,20 @@ function Header() {
                   data-parent="#accordion"
                 >
                   <div className={cx("card-body py-0", "box-menu")}>
-                    <div>
-                      <Link
-                        to={"/club/a/1"}
-                        onClick={() => dropdownMenu(false)}
-                        className={cx(
-                          "item",
-                          "text-decoration-none w-100 d-block text-dark p-2"
-                        )}
-                      >
-                        Doiii 1
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={"/"}
-                        onClick={() => dropdownMenu(false)}
-                        className={cx(
-                          "item",
-                          "text-decoration-none w-100 d-block text-dark p-2"
-                        )}
-                      >
-                        Doiii 2
-                      </Link>
-                    </div>
+                    {team.map((item, index) => (
+                      <div key={index}>
+                        <Link
+                          to={`/club/${item.name}/${item.id}`}
+                          onClick={() => dropdownMenu(false)}
+                          className={cx(
+                            "item",
+                            "text-decoration-none w-100 d-block text-dark p-2"
+                          )}
+                        >
+                          {item.name}
+                        </Link>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -446,7 +445,7 @@ function Header() {
                       aria-expanded="true"
                       aria-controls="collapseFive"
                     >
-                      <span>Contact us</span>
+                      <span>Contact Us</span>
                     </Link>
                   </h5>
                 </div>
