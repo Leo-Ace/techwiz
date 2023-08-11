@@ -59,22 +59,22 @@ function Footer(props) {
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link to="/club">Our team</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link to="/team-table">Team table</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link to="/about">About us</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link to="/">Contact us</Link>
                 <div className={cx("line")}></div>
               </div>
             </div>

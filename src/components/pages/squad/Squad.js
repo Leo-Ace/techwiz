@@ -14,9 +14,18 @@ function Squad() {
 				<div className={cx("row")}>
 					<div className={cx("name_doi_bong text-center py-5 w-100 text-danger text-uppercase")}>
 						<h1>HaNoi FC</h1>
-						<hr className={cx("bg-danger")}/>
+						<hr className={cx("bg-danger")} />
 					</div>
-					<div className={cx("wrap-list-cauthu ")}>
+					<div className={cx("sap_xep")}>
+						<div class="form-group">
+							<select class="form-control" name="" id="">
+								<option>Arrange</option>
+								<option>adsf</option>
+								<option>radf</option>
+							</select>
+						</div>
+					</div>
+					<div className={cx("wrap-list-cauthu")}>
 						<li class="list-cauthu">
 							<a href="/the-thao/du-lieu-bong-da/cau-thu/l-messi-154" alt="L. Messi" class="header-list-cauthu" >
 								<div class="avatar"><img src="https://i-thethao.vnecdn.net/logo/2021/05/04/neymar-1620116914_m_100x100.jpg" /></div>
