@@ -64,6 +64,7 @@ export const footballTeam = [
     name: "Real Madrid",
     thumbnail: "/images/logo_Real_Madrid.png",
     banner: "/images/banner-Real_Madrid.jpg",
+    cup: 14,
     achievements: [
       "20th Copa del Rey",
       "8th Club World Championship",
@@ -82,6 +83,7 @@ export const footballTeam = [
     name: "Manchester United",
     thumbnail: "/images/logo_Manchester_United.png",
     banner: "/images/banner-Manchester_United.jpg",
+    cup: 3,
     achievements: [
       "20 EPL - EXCLUSIVE ENGLISH",
       "12 FA CUP",
@@ -101,6 +103,7 @@ export const footballTeam = [
     name: "Man City",
     thumbnail: "/images/logo_Man_City.png",
     banner: "/images/banner-Man_City.png",
+    cup: 5,
     achievements: [
       "Football League/Premier League Champions",
       "FA Women's Super League Champions",
@@ -119,6 +122,7 @@ export const footballTeam = [
     name: "Liverpool",
     thumbnail: "/images/logo_Liverpool.png",
     banner: "/images/banner-Liverpool.jpg",
+    cup: 2,
     achievements: [
       "First Division/Premier League (19)",
       "Second Division (4)",
@@ -138,6 +142,7 @@ export const footballTeam = [
     name: "Barcelone",
     thumbnail: "/images/logo_Barcelone.png",
     banner: "/images/banner-Barcelone.png",
+    cup: 0,
     achievements: [
       "27 La Liga",
       "31 Copa del Rey",
@@ -1489,27 +1494,209 @@ export const player = [
 
 export const match = [
   {
-    id: 0,
-    id_team_one: 0,
-    leagues: "",
+    id: 1,
+    leagues: "Champions League",
     status: 0,
-    time: "",
-    address: "",
-    thumbnail: "",
+    iframe:"https://www.youtube.com/embed/9qwRV00skO8?si=_VG0mk3F_VBHs7yZ ",
+    time: "11:00",
     description: [],
   },
+  {
+    id: 2,
+    leagues: "Champions League",
+    status: 0,
+    iframe:"https://www.youtube.com/embed/ToS0PSTbUt0?si=DVDgwGfDuIiFrxpp",
+    time: "11:00",
+    description: [],
+  },
+  {
+    id: 3,
+    leagues: "Champions League",
+    status: 0,
+    iframe:"https://www.youtube.com/embed/vkWqypxSsmQ?si=yHhcgliLGA6wPPRR",
+    time: "11:00",
+    description: [],
+  },
+  {
+    id: 4,
+    leagues: "Champions League",
+    status: 0,
+    iframe:"https://www.youtube.com/embed/BEtpTrDN52A?si=QSsRAJqlHOpBULyV",
+    time: "11:00",
+    description: [],
+  },
+  {
+    id: 5,
+    leagues: "Champions League",
+    status: 0,
+    iframe:"https://www.youtube.com/embed/NfzkB0v31Pg?si=YQD1hlfpzEHChTXu",
+    time: "12:00",
+    description: [],
+  },
+  {
+    id: 6,
+    leagues: "Champions League",
+    status: 1,
+    iframe:"",
+    time: "13:00",
+    description: "Coming Soon",
+  },
+  {
+    id: 7,
+    leagues: "Champions League",
+    status: 1,
+    iframe:"",
+    time: "14:00",
+    description: "Coming Soon",
+  },
+  {
+    id: 8,
+    leagues: "Champions League",
+    status: 1,
+    iframe:"",
+    time: "15:00",
+    description: "Coming Soon",
+  },
+  {
+    id: 9,
+    leagues: "Champions League",
+    status: 1,
+    iframe:"",
+    time: "16:00",
+    description: "Coming Soon",
+  },
+  {
+    id: 10,
+    leagues: "Champions League",
+    status: 1,
+    iframe:"",
+    time: "17:00",
+    description: "Coming Soon",
+  }
 ];
 
 export const orderMatch = [
   {
-    id: 0,
-    id_match: 0,
-    id_team: 0,
-    ratio: 0,
-    squad: "0-0-0",
-    thumbnail: "",
-    description: [],
+    id: 1,
+    id_match: 1,
+    id_team: 1,
+    squad: "4-3-2-1",
   },
+  {
+    id: 2,
+    id_match: 1,
+    id_team: 2,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 3,
+    id_match: 2,
+    id_team: 2,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 4,
+    id_match: 2,
+    id_team: 3,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 5,
+    id_match: 3,
+    id_team: 3,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 6,
+    id_match: 3,
+    id_team: 4,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 7,
+    id_match: 4,
+    id_team: 4,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 8,
+    id_match: 4,
+    id_team: 5,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 9,
+    id_match: 5,
+    id_team: 5,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 10,
+    id_match: 5,
+    id_team: 3,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 11,
+    id_match: 6,
+    id_team: 2,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 12,
+    id_match: 6,
+    id_team: 4,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 13,
+    id_match: 7,
+    id_team: 2,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 14,
+    id_match: 7,
+    id_team: 5,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 15,
+    id_match: 8,
+    id_team: 3,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 16,
+    id_match: 8,
+    id_team: 4,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 17,
+    id_match: 9,
+    id_team: 3,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 18,
+    id_match: 9,
+    id_team: 5,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 19,
+    id_match: 10,
+    id_team: 4,
+    squad: "4-3-2-1",
+  },
+  {
+    id: 20,
+    id_match: 10,
+    id_team: 5,
+    squad: "4-3-2-1",
+  }
+
 ];
 
 export const comment = [

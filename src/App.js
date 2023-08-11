@@ -18,6 +18,7 @@ function App() {
         <Route path='/player/:id' element={<Main children={<Detailplayer />} />} />
         <Route path='/club/:name/:id' element={<Main children={<Club/>} />} />
         <Route path='/team-table' element={<Main children={<Squad />} />} />
+        <Route path='/match/:id' element={<Main children={<Squad />} />} />
         <Route path='/about' element={<Main children={<About />} />} />
         <Route path='/contact' element={<Main children={<Contact />} />} />
         <Route path='/login' element={<Main children={<Login/>} />} />

@@ -1,5 +1,5 @@
 /* eslint-disable no-use-before-define */
-import { match } from "../../db";
+import { match } from "../db";
 
 export const getAllMatch = () => {
   return [null, match];
