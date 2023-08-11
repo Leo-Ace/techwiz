@@ -2,7 +2,10 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
-import {PiSoccerBallFill} from "react-icons/pi"
+import { PiSoccerBallFill } from "react-icons/pi"
+import { ImTable2 } from "react-icons/im"
+import { RiTeamFill } from "react-icons/ri"
+import { MdSecurity } from "react-icons/md"
 
 
 const cx = classNames.bind(styles); 
@@ -13,61 +16,53 @@ function Home() {
       <main className={cx("homecomponent")}>
         <div className={cx("home-component")}>
           <div>
-            <div id="carouselId" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+          <div id="carouselId" className={cx("carousel slide")} data-ride="carousel">
+              <ol className={cx("carousel-indicators")}>
+                <li data-target="#carouselId" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselId" data-slide-to="1"></li>
                 <li data-target="#carouselId" data-slide-to="2"></li>
                 <li data-target="#carouselId" data-slide-to="3"></li>
                 <li data-target="#carouselId" data-slide-to="4"></li>
               </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
+              <div className={cx("carousel-inner")} role="listbox">
+                <div className={cx("carousel-item active")}>
                   <img src="/images/cauthu-01.jpg" alt="First slide" className={cx("w-100")} />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3>Erling Haaland</h3>
-                    <p>Manchester united</p>
+                  <div className={cx("carousel-caption d-none d-md-block")}>
+                    
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div className={cx("carousel-item")}>
                   <img src="/images/cauthu-02.jpg" alt="Second slide" className={cx("w-100")} />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
-                  </div>
+                  
                 </div>
-                <div class="carousel-item">
+                <div className={cx("carousel-item")}>
                   <img src="/images/cauthu-03.jpg" alt="Third slide" className={cx("w-100")} />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
+                  <div className={cx("carousel-caption d-none d-md-block")}>
+                    
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div className="carousel-item">
                   <img src="/images/cauthu-04.jpg" alt="Third slide" className={cx("w-100")} />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
+                  <div className={cx("carousel-caption d-none d-md-block")}>
+                    
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div className="carousel-item">
                   <img src="/images/cauthu-05.jpg" alt="Third slide" className={cx("w-100")} />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
+                  <div className="carousel-caption d-none d-md-block">
+                    
                   </div>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+              <a className="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+              <a className="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
               </a>
             </div>
-
           </div>
           <div className={cx("container")}>
             <div className={cx("bcd", "my-2")}>
@@ -171,583 +166,393 @@ function Home() {
                             </div>
                           </div>
                         </div>
-                        <div className={cx("d-flex text-light justify-content-between")}>
-                          <div className='comment d-flex'>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
-                            <div className={cx("text-comment")}>Captain</div>
+                        <div
+                          className={cx(
+                            "d-flex text-light justify-content-between align-items-center"
+                          )}
+                        >
+                          <div className="comment d-flex h-100 align-items-center">
+                            <div
+                              className={cx(
+                                "text-comment",
+                                "py-1 px-2 text-center"
+                              )}
+                            >
+                              Captain
+                            </div>
+                            <div
+                              className={cx(
+                                "text-comment",
+                                "py-1 px-2 text-center"
+                              )}
+                            >
+                              Captain
+                            </div>
+                            <div
+                              className={cx(
+                                "text-comment",
+                                "py-1 px-2 text-center"
+                              )}
+                            >
+                              Captain
+                            </div>
                           </div>
-                          <div className={cx("text-comment")}>
-                            <Link to={"/"} className={cx("text-decoration-none text-white")}>Detail</Link>
+                          <div
+                            className={cx(
+                              "text-comment",
+                              "py-1 px-2 text-center"
+                            )}
+                          >
+                            Peter Drury
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div className={cx("col-md-3", "bg-time")}>
+                    <h6 className={cx("text-center my-3")}>Premier League</h6>
+                    <div className="time">
+                      <h1 className={cx("text-center")}>17:00</h1>
+                    </div>
+                    <div className={cx("detail")}>
+                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white")}>View</Link></div>
+                    </div>
+                  </div>
+                </div>
+                <div className={cx("row m-0 mb-3")}>
+                  <div className={cx("col-md-9 m-0 p-0 ")}>
+                    <div className={cx("boder-colum", "pt-2")}>
+                      <div className={cx("d-flex pb-2", "content")}>
+                        <div
+                          className={cx(
+                            "col-4 d-flex flex-column justify-content-center"
+                          )}
+                        >
+                          <img
+                            className={cx("w-50 m-auto d-block")}
+                            src="/images/team1.jpg"
+                          />
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            Tigres Zipaquira
+                          </div>
+                        </div>
+                        <div className={cx("col-4")}>
+                          <div
+                            className={cx(
+                              "col-12 mt-5 p-1 text-center text-light",
+                              "score"
+                            )}
+                          >
+                            Live
+                          </div>
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            2 - 2
+                          </div>
+                        </div>
+                        <div
+                          className={cx(
+                            "col-4 d-flex flex-column justify-content-center"
+                          )}
+                        >
+                          <img
+                            className={cx("w-50 m-auto d-block")}
+                            src="/images/team1.jpg"
+                          />
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            Tigres Zipaquira
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className={cx(
+                          " text-light justify-content-between align-items-center"
+                        )}
+                      >
+                        <div className="comment h-100 align-items-center">
+                          <div
+                            className={cx(
+                              "text-comment",
+                              "py-1 px-2 text-center"
+                            )}
+                          >
+                            Peter Drury
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={cx("col-md-3", "bg-time")}>
+                    <h6 className={cx("text-center my-3")}>Premier League</h6>
+                    <div className="time">
+                      <h1 className={cx("text-center")}>17:00</h1>
+                    </div>
+                    <div className={cx("detail")}>
+                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white")}>View</Link></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={cx("off")}>
+                <div className={cx("pb-2","text")}>The upcoming match</div>
+                <div className={cx("row m-0 mb-3")}>
+                  <div className={cx("col-md-9 m-0 p-0 ")}>
+                    <div className={cx("boder-colum", "pt-2")}>
+                      <div className={cx("d-flex pb-2", "content")}>
+                        <div
+                          className={cx(
+                            "col-4 d-flex flex-column justify-content-center"
+                          )}
+                        >
+                          <img
+                            className={cx("w-50 m-auto d-block")}
+                            src="/images/team1.jpg"
+                          />
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            Tigres Zipaquira
+                          </div>
+                        </div>
+                        <div className={cx("col-4")}>
+                          <div
+                            className={cx(
+                              "col-12 mt-5 p-1 text-center text-light",
+                              "score"
+                            )}
+                          >
+                            Live
+                          </div>
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            2 - 2
+                          </div>
+                        </div>
+                        <div
+                          className={cx(
+                            "col-4 d-flex flex-column justify-content-center"
+                          )}
+                        >
+                          <img
+                            className={cx("w-50 m-auto d-block")}
+                            src="/images/team1.jpg"
+                          />
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            Tigres Zipaquira
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className={cx(
+                          " text-light justify-content-between align-items-center"
+                        )}
+                      >
+                        <div className="comment h-100 align-items-center">
+                          <div
+                            className={cx(
+                              "text-comment",
+                              "py-1 px-2 text-center"
+                            )}
+                          >
+                            Peter Drury
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={cx("col-md-3", "bg-time")}>
+                    <h6 className={cx("text-center my-3")}>Premier League</h6>
+                    <div className="time">
+                      <h1 className={cx("text-center")}>17:00</h1>
+                    </div>
+                    <div className={cx("detail")}>
+                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white")}>View</Link></div>
+                    </div>
+                  </div>
+                </div>
+                <div className={cx("row m-0 mb-3")}>
+                  <div className={cx("col-md-9 m-0 p-0 ")}>
+                    <div className={cx("boder-colum", "pt-2")}>
+                      <div className={cx("d-flex pb-2", "content")}>
+                        <div
+                          className={cx(
+                            "col-4 d-flex flex-column justify-content-center"
+                          )}
+                        >
+                          <img
+                            className={cx("w-50 m-auto d-block")}
+                            src="/images/team1.jpg"
+                          />
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            Tigres Zipaquira
+                          </div>
+                        </div>
+                        <div className={cx("col-4")}>
+                          <div
+                            className={cx(
+                              "col-12 mt-5 p-1 text-center text-light",
+                              "score"
+                            )}
+                          >
+                            Live
+                          </div>
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            2 - 2
+                          </div>
+                        </div>
+                        <div
+                          className={cx(
+                            "col-4 d-flex flex-column justify-content-center"
+                          )}
+                        >
+                          <img
+                            className={cx("w-50 m-auto d-block")}
+                            src="/images/team1.jpg"
+                          />
+                          <div
+                            className={cx(
+                              "text-content text-center text-light"
+                            )}
+                          >
+                            Tigres Zipaquira
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className={cx(
+                          " text-light justify-content-between align-items-center"
+                        )}
+                      >
+                        <div className="comment h-100 align-items-center">
+                          <div
+                            className={cx(
+                              "text-comment",
+                              "py-1 px-2 text-center"
+                            )}
+                          >
+                            Peter Drury
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={cx("col-md-3", "bg-time")}>
+                    <h6 className={cx("text-center my-3")}>Premier League</h6>
+                    <div className="time">
+                      <h1 className={cx("text-center")}>17:00</h1>
+                    </div>
+                    <div className={cx("detail")}>
+                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white")}>View</Link></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={cx("pt-5")}>
+              <div className={cx("px-5", "bg-pd")} >
+                <div className={cx("row")}>
+                  <div className={cx("col-md-6 col-xl-3")}>
+                    <div className={cx("item-feature dark text-center text-white")}>
+                      <i className="fa fa-cogs"></i>
+                      <h3>Host selection</h3>
+                      <p>The bidding procedure to host the 2018 and 2022 FIFA World Cups began in January 2009, and national associations.</p>
+                      <a href="#" className={cx("text-decoration-none text-white", "hover-effect")}>Learn More</a>
+                    </div>
+                  </div>
 
+                  <div className={cx("col-md-6 col-xl-3")}>
+                    <div className={cx("item-feature dark text-center text-white")}>
+                      <i className="fa fa-users"></i>
+                      <h3>Teams</h3>
+                      <p>For the first time in the history of the FIFA World Cup, all eligible nations – the 209 FIFA member associations.</p>
+                      <a href="#" className={cx("text-decoration-none text-white", "hover-effect")}>Learn More</a>
+                    </div>
+                  </div>
 
+                  <div className={cx("col-md-6 col-xl-3")}>
+                    <div className={cx("item-feature dark text-center text-white")}>
+                      <i className="fa fa-calendar"></i>
+                      <h3>Venues</h3>
+                      <p>The final choice of host cities was announced on 29 September 2012. The number of cities was further reduced to 1.</p>
+                      <a href="#" className={cx("text-decoration-none text-white", "hover-effect")}>Learn More</a>
+                    </div>
+                  </div>
+
+                  <div className={cx("col-md-6 col-xl-3")}>
+                    <div className={cx("item-feature dark text-center text-white")}>
+                      <i className="fa fa-soccer-ball-o"></i>
+                      <h3>Marketing</h3>
+                      <p>The tournament logo was unveiled on 28 October 2014 by cosmonauts at the International Space Station.</p>
+                      <a href="#" className={cx("text-decoration-none text-white", "hover-effect")}>Learn More</a>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <div className={cx("row m-0")}>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div className={cx("col-4")}>
-                            <img className={cx("ml-3")} src='/images/team1.jpg' />
-                            <div className={cx("text-content text-center text-light")}>
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
+              </div>
+
+            </div>
+            <div className={cx("row pt-5")}>
+              <div className={cx("col-md-4")}>
+                <a href="" className={cx("text-decoration-none")}>
+                  <div className={cx("card", "mb-4")}>
+                    <div className={cx("card-body", "text-center", "zoom-effect")}>
+                      <PiSoccerBallFill className={cx("size")} />
+                      <h4 className={cx("card-title")}>Soccer Team</h4>
+                      <p className={cx("card-text")}>Best Sports Features</p>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <div className={cx("row m-0")}>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div className={cx("col-4")}>
-                            <div
-                              className={cx(
-                                "col-12 mt-4 p-1 text-center text-light",
-                                "score"
-                              )}
-                            >
-                              Trực tiếp
-                            </div>
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              2 - 2
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "d-flex text-light justify-content-between align-items-center"
-                          )}
-                        >
-                          <div className="comment d-flex h-100 align-items-center">
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div className={cx("col-4")}>
-                            <div
-                              className={cx(
-                                "col-12 mt-4 p-1 text-center text-light",
-                                "score"
-                              )}
-                            >
-                              Trực tiếp
-                            </div>
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              2 - 2
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "d-flex text-light justify-content-between align-items-center"
-                          )}
-                        >
-                          <div className="comment d-flex h-100 align-items-center">
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
+                </a>
+              </div>
+
+              <div className={cx("col-md-4")}>
+                <a href="" className={cx("text-decoration-none")}>
+                  <div className={cx("card", "mb-4", "phong")}>
+                    <div className={cx("card-body", "text-center", "zoom-effect")}>
+                      <PiSoccerBallFill className={cx("size")} />
+                      <h4 className={cx("card-title")}>Club Features</h4>
+                      <p className={cx("card-text")}>Best Sports Features</p>
                     </div>
                   </div>
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="nav-profile"
-                  role="tabpanel"
-                  aria-labelledby="nav-profile-tab"
-                >
-                  <div className={cx("row m-0")}>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div className={cx("col-4")}>
-                            <div
-                              className={cx(
-                                "col-12 mt-4 p-1 text-center text-light",
-                                "score"
-                              )}
-                            >
-                              Trực tiếp
-                            </div>
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              2 - 2
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "d-flex text-light justify-content-between align-items-center"
-                          )}
-                        >
-                          <div className="comment d-flex h-100 align-items-center">
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div className={cx("col-4")}>
-                            <div
-                              className={cx(
-                                "col-12 mt-4 p-1 text-center text-light",
-                                "score"
-                              )}
-                            >
-                              Trực tiếp
-                            </div>
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              2 - 2
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "d-flex text-light justify-content-between align-items-center"
-                          )}
-                        >
-                          <div className="comment d-flex h-100 align-items-center">
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
+                </a>
+              </div>
+
+              <div className={cx("col-md-4")}>
+                <a href="services.html" className={cx("text-decoration-none")}>
+                  <div className={cx("card", "mb-4")}>
+                    <div className={cx("card-body", "text-center", "zoom-effect")}>
+                      <PiSoccerBallFill className={cx("size")} />
+                      <h4 className={cx("card-title")}>Technical Body</h4>
+                      <p className={cx("card-text")}>Best Sports Features</p>
                     </div>
                   </div>
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="nav-contact"
-                  role="tabpanel"
-                  aria-labelledby="nav-contact-tab"
-                >
-                  <div className={cx("row m-0")}>
-                    <div className={cx("col-md-6 px-0 px-md-2")}>
-                      <div className={cx("boder-colum", "pt-2")}>
-                        <div className={cx("d-flex pb-2", "content")}>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                          <div className={cx("col-4")}>
-                            <div
-                              className={cx(
-                                "col-12 mt-4 p-1 text-center text-light",
-                                "score"
-                              )}
-                            >
-                              Trực tiếp
-                            </div>
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              2 - 2
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "col-4 d-flex flex-column justify-content-center"
-                            )}
-                          >
-                            <img
-                              className={cx("w-50 m-auto d-block")}
-                              src="/images/team1.jpg"
-                            />
-                            <div
-                              className={cx(
-                                "text-content text-center text-light"
-                              )}
-                            >
-                              Tigres Zipaquira
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "d-flex text-light justify-content-between align-items-center"
-                          )}
-                        >
-                          <div className="comment d-flex h-100 align-items-center">
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                            <div
-                              className={cx(
-                                "text-comment",
-                                "py-1 px-2 text-center"
-                              )}
-                            >
-                              Captain
-                            </div>
-                          </div>
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            <Link
-                              to={"/"}
-                              className={cx("text-decoration-none text-white")}
-                            >
-                              Detail
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
 
