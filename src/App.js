@@ -6,7 +6,7 @@ import Detail_player from './components/pages/Detail/Detail.player';
 import About from './components/pages/About/About';
 import Squad from './components/pages/squad/Squad';
 import Match from './components/pages/MatchDetail/Match';
-import Detail_club from './components/pages/Detail_club/Detail_club';
+import Detailclub from './components/pages/Detail_club/Detail_club';
 function App() {
   return (
     <>
