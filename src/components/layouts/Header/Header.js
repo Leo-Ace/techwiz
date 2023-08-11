@@ -12,11 +12,14 @@ import { FaUser } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import $ from "jquery";
 import { getAllTeam } from "../../../services/teamService";
+import { getPlayerByName } from "../../../services/playerService";
 
 const cx = classNames.bind(styles);
 
 function Header() {
   const [account, setAccount] = useState([]);
+  const inputSearchLg = useRef();
+  const inputSearchMd = useRef();
   useEffect(() => {
     const account = JSON.parse(sessionStorage.getItem('login'));
     if (account) {
@@ -36,6 +39,18 @@ function Header() {
   const boxMenuMd = useRef();
   const headerElem = useRef();
   const iconScrollTop = useRef();
+
+  const handleSearch = (check) => {
+    if(check) {
+      const value = inputSearchLg.current.value;
+      const [err, data] = getPlayerByName(value);
+      window.location.href = `/player/${data ? data.id : value}`;
+    } else {
+      const value = inputSearchMd.current.value;
+      const [err, data] = getPlayerByName(value);
+      window.location.href = `/player/${data ? data.id : value}`;
+    }
+  }
 
   useEffect(() => {
     document.onscroll = () => {
@@ -234,12 +249,14 @@ function Header() {
                               className={cx(
                                 "form-control shadow-none border-0"
                               )}
+                              ref={inputSearchLg}
                             />
                             <button
-                              type="submit"
+                              type="button"
                               className={cx(
                                 "btn shadow-none border-0 position-absolute bg-transparent"
                               )}
+                              onClick={() => handleSearch(true)}
                             >
                               <BsSearch color="#000" />
                             </button>
@@ -488,16 +505,18 @@ function Header() {
                   )}
                 >
                   <input
-                    type="textt"
+                    type="text"
                     name="q"
                     placeholder="search..."
                     className={cx("form-control w-100 bg-transparent p-4")}
+                    ref={inputSearchMd}
                   />
                   <button
-                    type="submit"
+                    type="button"
                     className={cx(
                       "btn border-0 shadow-none position-absolute h-100"
                     )}
+                    onClick={() => handleSearch(false)}
                   >
                     <BsSearch fontSize={25} color="red" />
                   </button>
@@ -518,8 +537,8 @@ function Header() {
 
                 <span className={cx("small mx-2 d-block text-secondary")}>OR</span>
 
-                <a
-                  href="#"
+                <Link
+                  to={''}
                   className={cx(
                     "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                     "item"
@@ -527,7 +546,7 @@ function Header() {
                   onClick={() => onLogout()}
                 >
                   Logout
-                </a>
+                </Link>
               </div>
             }
             {!account.name &&

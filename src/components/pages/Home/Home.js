@@ -263,7 +263,7 @@ function Home() {
               </div>
               <div className={cx("off")}>
                 <div className={cx("pb-2 text-uppercase", "text")}>
-                  The upcoming match
+                  The match was over
                 </div>
                 {match
                   .filter((item) => item.status === 1)
@@ -312,7 +312,7 @@ function Home() {
                                   "text-content text-center text-light h5"
                                 )}
                               >
-                                0 - 0
+                                {getOrderMatch(Number(elem.id))[0].ratio} - {getOrderMatch(Number(elem.id))[1].ratio}
                               </div>
                             </div>
                             <div
@@ -532,7 +532,7 @@ function Home() {
             </div>
           </div>
           <div>
-            <img src="/images/banner3.jpg" className={cx("w-100")} />
+            <img src="/images/banner-page_home_end.jpg" className={cx("w-100")} />
           </div>
         </div>
       </main>

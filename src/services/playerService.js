@@ -10,6 +10,11 @@ export const getPlayerById = (id) => {
   return [null, result]
 }
 
+export const getPlayerByName = (value) => {
+  const result = player.find(item => item.name.indexOf(value) !== -1);
+  return [null, result]
+}
+
 export const getPlayerByIdTeam = (id) => {
   const result = player.filter(item => item.id_team === id);
   return [null, result]

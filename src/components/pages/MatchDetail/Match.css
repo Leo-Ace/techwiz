@@ -2,15 +2,19 @@
   background-color: #000;
 }
 .time_match{
-    background-image: url(../../../../public/images/match/backgroud.jpg);
+    /* background-image: url(../../../../public/images/match/backgroud.jpg);
     background-size: cover;
-    padding: 30px 0 30px;
+    padding: 30px 0 30px; */
 }
-.match_left,.match_right{
+/* .match_left,.match_right{
     display: flex;
     flex: 1;
     align-items: center;
     min-width: 200px;
+} */
+
+.match_right {
+  /* flex-direction: row-reverse; */
 }
 .name {
     margin: auto;
