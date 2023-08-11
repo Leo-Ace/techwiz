@@ -1,26 +1,21 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./header.module.css";
 import logo from "../../../logo.png";
 import { Link } from "react-router-dom";
 import {
   BsChevronUp,
-  BsFacebook,
   BsFillCaretDownSquareFill,
-  BsPinterest,
   BsSearch,
-  BsTwitter,
 } from "react-icons/bs";
-import { FaFacebookF, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import $ from "jquery";
-import { MainData } from "../Main";
 import { getAllTeam } from "../../../services/teamService";
 
 const cx = classNames.bind(styles);
 
 function Header() {
-  // const { team } = useContext(MainData); 
   const [team, setTeam] = useState([]);
   
   const boxMenuMd = useRef();
@@ -56,16 +51,12 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    const start = async () => {
-      // team
-      const [err_team, dt_team] = await getAllTeam();
-      if(err_team) {
-        throw Error('Error!');
-      } else {
-        setTeam(dt_team);
-      }
+    const [err_team, dt_team] = getAllTeam();
+    if(err_team) {
+      throw Error('Error!');
+    } else {
+      setTeam(dt_team);
     }
-    start();
   }, []);
 
   const handleScrollTop = () => {

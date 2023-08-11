@@ -3,32 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.wrap-list-cauthu .logo-club {
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-}
-
-.wrap-list-cauthu .list-cauthu {
-    width: calc(25% - 24px);
-    display: inline-block;
-    font-size: 12px;
-    border: 1px solid #C7C7C7;
+.Squad_player{
+    border: 1px solid #ccc;
     border-radius: 6px;
-    margin: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
 }
-
-.wrap-list-cauthu .header-list-cauthu {
-    background: #FAFAFA;
-    border-bottom: 1px solid #C7C7C7;
-    border-radius: 6px 6px 0 0;
-    padding: 16px;
-    -webkit-box-align: center;
-    align-items: center;
-    display: flex;
-}
-
 .avatar {
     background: #E5E5E5;
     width: 56px;
@@ -37,87 +17,52 @@
     border: 2px solid #C7C7C7;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    flex-shrink: 0;
+    margin-left: 15px;
 }
 
 .avatar img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
-
-.wrap-list-cauthu .header-list-cauthu .right {
-    height: 100%;
-}
-
-.right {
-    float: right !important;
-}
-
-.wrap-list-cauthu .header-list-cauthu .name {
-    position: static;
-    padding: 0;
-    display: block;
-    font-size: 16px;
-    font-family: "Bai Jamjuree", sans-serif;
-    color: #38404D;
-    margin-bottom: 12px;
-}
-
-.wrap-list-cauthu .nationality {
+.nationality {
     color: #A4ABB6;
     display: block;
     font-size: 14px;
 }
-
-.wrap-list-cauthu .nationality .flag {
+.flag{
     width: 16px;
     margin-right: 7px;
 }
-
-.wrap-list-cauthu .content {
+.logo-club {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+.player{
+    background-color: #fafafa;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 16px;
+}
+.content {
     padding: 16px 12px;
     line-height: 1.167;
     font-size: 13px;
 }
-
-.wrap-list-cauthu .content .width_common {
-    align-items: center;
-    height: 20px;
+.width_common{
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
 }
-
-.wrap-list-cauthu .content .left {
-    color: #A4ABB6;
-}
-
-.wrap-list-cauthu .content .right {
-    color: #38404D;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.wrap-list-cauthu .view-detail {
-    text-align: center;
-    clear: both;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.wrap-list-cauthu .view-detail a,
-.wrap-list-cauthu .view-detail span {
-    width: 72px;
-    line-height: 29px;
-    text-align: center;
-    display: inline-block;
+.view-detail a{
     color: #636B79;
     background: #FAFAFA;
     border: 1px solid #AEB4C4;
     border-radius: 6px;
+    line-height: 29px;
+    padding: 9px 12px;
+}
+.view-detail{
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 0rem;
 }

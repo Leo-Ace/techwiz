@@ -1,125 +1,141 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Detail_member.css';
+import { useParams } from 'react-router-dom';
+import { getPlayerById } from '../../../services/playerService';
+import { getTeamById } from '../../../services/teamService';
 
 const cx = classNames.bind(styles);
 function Detail_player(props) {
-  return (
-    <div className={cx("detail_member")}>
-      <div className={cx("player")}>
-        <div className={cx("container mb-4")}>
-          <div className={cx("row")}>
-            <div className={cx("col-lg-4")}>
-              <div className={cx("product-imgs")}>
-                <div className={cx("img-display")}>
-                  <div className={cx("img-showcase")}>
-                    <img src="/images/detail/01.jpg" alt="shoe image" />
-                  </div>
-                </div>
+  const { id } = useParams();
+  const [player, setPlayer] = useState();
+  const [club, setClub] = useState();
 
-              </div>
-            </div>
-            <div className={cx("col-lg-8")}>
-              <div className={cx("product-description")}>
-                <div className={cx("project-title")}>
-                  <h2 className={cx("h2-lg")}>NEYMAR JR</h2>
+  useEffect(() => {
+    const [err, data_player] = getPlayerById(Number(id));
+    setPlayer(data_player);
+    console.log(data_player)
+    const [err_team, data_team] = getTeamById(Number(data_player.id_team));
+    setClub(data_team);
+  }, [id]);
+
+  return (
+    <>
+    {player ? (
+      <div className={cx("detail_member")}>
+        <div className={cx("banner_club")}>
+          <img className={cx("w-100")} src='/images/banne_detailClub.gif' alt="" />
+        </div>
+        <div className={cx("player")}>
+          <div className={cx("project-title")}>
+            <h1 className={cx("h2-lg w-100 text-center text-danger py-4")}>{player.name}</h1>
+          </div>
+          <div className={cx("container mb-4")}>
+            <div className={cx("row")}>
+              <div className={cx("col-lg-4")}>
+                <div className={cx("product-imgs")}>
+                  <div className={cx("img-display")}>
+                    <div className={cx("img-showcase")}>
+                      <img src={player.thumbnail} alt="shoe image" className={cx("w-100 p-3")} />
+                    </div>
+                  </div>
                 </div>
-                <div className={cx("product-txt")}>
-                  <div className={cx("product-info")}>
-                    <p>Full Name: <span>Neymar da Silva Santos Júnior</span></p>
-                    <p>Age: <span>1992 (31 tuổi)</span></p>
-                    <p>Nationality: <span>Brazil</span></p>
-                    <p>Football club: <span>Paris Saint-Germain</span></p>
-                    <p>Location: <span>ST</span></p>
-                    <p>Height: <span>1,75 m</span></p>
-                    <p>Weight: <span>68 kg</span></p>
+              </div>
+              <div className={cx("col-lg-8")}>
+                <div className={cx("product-description")}>
+                  <div className={cx("product-txt")}>
+                    <div className={cx("product-info")}>
+                      <p>Full Name: <span>{player.name}</span></p>
+                      <p>Birthday: <span>{player.birthday}</span></p>
+                      <p>Nationality: <span>{player.country}</span></p>
+                      <p>Football club: <span>{club ? club.name : ''}</span></p>
+                      <p>Location: <span>{player.location}</span></p>
+                      <p>Height: <span>{player.height} cm</span></p>
+                      <p>Weight: <span>{player.weight} kg</span></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className={cx("statistics mt-5 wide-70 ")}>
-        <div className={cx("container")}>
-          <div className={cx("row")}>
-            <div className={cx("col-lg-12")}>
-              <div className={cx("mb-60 text-center")}>
-                <h2 className={cx("h2-xl")}>Statistics</h2>
+        <div className={cx("statistics mt-5 wide-70 ")}>
+          <div className={cx("container")}>
+            <div className={cx("row")}>
+              <div className={cx("col-lg-12")}>
+                <div className={cx("mb-60 text-center")}>
+                  <h2 className={cx("h2-xl")}>Club career</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div className={cx("row")}>
-            <div className={cx("col-lg-6")}>
-              <div className={cx(" achievements")}>
-                <table cellspacing="0" cellpadding="0" className={cx("table tbl-data")}>
-                  <thead>
-                    <tr>
-                      <th colspan="2" className={cx("th-name")}>Achievements</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Trận</td>
-                      <td>687</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Thẻ vàng</td>
-                      <td>182</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Thẻ đỏ</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Kiến tạo</td>
-                      <td>133</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Bàn thắng</td>
-                      <td>438</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div className={cx("mb-5")}>
+              <h5 className={cx("text-secondary", "career")}>{player.description}</h5>
+            </div>
+            <div className={cx("row")}>
+              <div className={cx("col-lg-12")}>
+                <div className={cx("mb-60 text-center")}>
+                  <h2 className={cx("h2-xl")}>Statistics</h2>
+                </div>
               </div>
             </div>
-            <div className={cx("col-lg-6")}>
-              <div className={cx("stylized")}>
-                <table cellspacing="0" cellpadding="0" className={cx("table tbl-data")}>
-                  <thead>
-                    <tr>
-                      <th colspan="2" className={cx("th-name")}>Stylized</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Work cup</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>C1</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Lege 1</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Copa América</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" className={cx("left")}>Quả Bóng Vàng</td>
-                      <td>0</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div className={cx("row")}>
+              <div className={cx("col-lg-6")}>
+                <div className={cx(" achievements")}>
+                  <table cellSpacing="0" cellPadding="0" className={cx("table tbl-data")}>
+                    <thead>
+                      <tr>
+                        <th colSpan="2" className={cx("th-name")}>Statistical</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" className={cx("left")}>Battle</td>
+                        <td>{player.statistics.match}</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" className={cx("left")}>Yellow card</td>
+                        <td>{player.statistics.yellow}</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" className={cx("left")}>Red card</td>
+                        <td>{player.statistics.red}</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" className={cx("left")}>Assist</td>
+                        <td>{player.statistics.assist}</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" className={cx("left")}>Goal</td>
+                        <td>{player.statistics.goal}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className={cx("col-lg-6")}>
+                <div className={cx("stylized")}>
+                  <table cellSpacing="0" cellPadding="0" className={cx("table tbl-data")}>
+                    <thead>
+                      <tr>
+                        <th colSpan="2" className={cx("th-name")}>Honor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {player.achievements.map((i, j) => (
+                      <tr key={j}>
+                        <td>{i}</td>
+                      </tr>
+                    ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>    
+    ) : ""}
+    </>
   );
 }
 

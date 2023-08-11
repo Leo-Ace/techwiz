@@ -1,45 +1,39 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './detail_club.module.css';
 import { Link, useParams } from 'react-router-dom';
-import { MainData } from '../../layouts/Main';
 import { getTeamById } from '../../../services/teamService';
 import { getPlayerByIdTeam } from '../../../services/playerService';
 import { getCoachById } from '../../../services/coachService';
 const cx = classNames.bind(styles);
 
 function DetailClub(props) {
-    // const { team, coach, player, comment } = useContext(MainData);
     const { id } = useParams();
     const [listPlayer, setListPlayer] = useState([]);
     const [isTeam, setIsTeam] = useState();
     const [coach, setCoach] = useState();
 
     useEffect(() => {
-        const start = async () => {
-            // team
-            const [err_team, data_team] = await getTeamById(id);
-            if(err_team) {
-                throw Error("Error!");
-            } else {
-                setIsTeam(data_team);
-            }
-            // player
-            const [err_player, data_player] = await getPlayerByIdTeam(id);
-            if(err_player) {
-                throw Error("Error!");
-            } else {
-                setListPlayer(data_player);
-            }
-            // player
-            const [err_coach, data_coach] = await getCoachById(id);
-            if(err_coach) {
-                throw Error("Error!");
-            } else {
-                setCoach(data_coach);
-            }
+        const [err_team, data_team] = getTeamById(Number(id));
+        if(err_team) {
+            throw Error("Error!");
+        } else {
+            setIsTeam(data_team);
         }
-        start();
+        // player
+        const [err_player, data_player] = getPlayerByIdTeam(Number(id));
+        if(err_player) {
+            throw Error("Error!");
+        } else {
+            setListPlayer(data_player);
+        }
+        // player
+        const [err_coach, data_coach] = getCoachById(Number(id));
+        if(err_coach) {
+            throw Error("Error!");
+        } else {
+            setCoach(data_coach);
+        }
     }, [id]);
 
     console.log(isTeam, listPlayer, coach)
@@ -175,7 +169,7 @@ function DetailClub(props) {
                 </div>
             </div>
             <div className={cx("banner_club", "mt-5")}>
-                <img className={cx("w-100")} src='/images/banner_club.webp' alt="" />
+                <img className={cx("w-100")} src={isTeam ? isTeam.banner : ""} alt="" />
             </div>  
         </div>
     );
