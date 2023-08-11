@@ -59,7 +59,7 @@ function Footer(props) {
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/club">Our team</Link>
+                <Link to="/club/:name/:id">Our team</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
@@ -74,7 +74,7 @@ function Footer(props) {
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Contact us</Link>
+                <Link to="/contact">Contact us</Link>
                 <div className={cx("line")}></div>
               </div>
             </div>
