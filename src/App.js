@@ -6,6 +6,7 @@ import Detailplayer from './components/pages/Detail/Detail.player';
 import About from './components/pages/About/About';
 import Squad from './components/pages/squad/Squad';
 import Club from './components/pages/Detail_club/Detail_club';
+import Contact from './components/pages/Contact/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/club/:name/:id' element={<Main children={<Club/>} />} />
         <Route path='/team-table' element={<Main children={<Squad />} />} />
         <Route path='/about' element={<Main children={<About />} />} />
+        <Route path='/contact' element={<Main children={<Contact />} />} />
 
       </Routes>
     </>
