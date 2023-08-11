@@ -1,22 +1,11 @@
 /* eslint-disable no-use-before-define */
-import * as http from '../common/http-common';
+import { footballTeam } from "../db";
 
-const URL = 'http://localhost:8000/footballTeam';
-
-export const getAll = async () => {
-  try {
-    const data = await http.get(URL);
-    return [null, data];
-  } catch (err) {
-    return [err, null];
-  }
+export const getAllTeam = () => {
+  return [null, footballTeam];
 }
 
-export const getById = async (id) => {
-  try {
-    const data = await http.get(`${URL}/${id}`);
-    return [null, data];
-  } catch (err) {
-    return [err, null];
-  }
+export const getTeamById = (id) => {
+  const result = footballTeam.find(item => item.id === id);
+  return [null, result]
 }

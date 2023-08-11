@@ -7,6 +7,9 @@ const cx = classNames.bind(styles);
 function About(props) {
     return (
         <>
+            <div className={cx("")}>
+                <img className={cx("w-100")} src='/images/banner-page_about.jpg' alt="" />
+            </div>
             <div className={cx("about")}>
                 <p>About Us</p>
                 <div className={cx("back")}>
