@@ -299,7 +299,7 @@ function Header() {
               "container d-flex flex-column align-items-center justify-content-center position-relative mt-5"
             )}
           >
-            <Link className={cx("navbar-brand", "col-4")} to={"/"}>
+            <Link className={cx("navbar-brand", "col-4")} to={"/"} onClick={() => dropdownMenu(false)}>
               <span
                 className={cx(
                   "col-md-6 p-0 m-0 d-block overflow-hidden rounded-circle"
@@ -317,6 +317,7 @@ function Header() {
                   <h5 className={cx("mb-0")}>
                     <Link
                       to={"/"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -364,7 +365,8 @@ function Header() {
                   <div className={cx("card-body py-0", "box-menu")}>
                     <div>
                       <Link
-                        to={"/"}
+                        to={"/club/a/1"}
+                        onClick={() => dropdownMenu(false)}
                         className={cx(
                           "item",
                           "text-decoration-none w-100 d-block text-dark p-2"
@@ -376,6 +378,7 @@ function Header() {
                     <div>
                       <Link
                         to={"/"}
+                        onClick={() => dropdownMenu(false)}
                         className={cx(
                           "item",
                           "text-decoration-none w-100 d-block text-dark p-2"
@@ -394,7 +397,8 @@ function Header() {
                 >
                   <h5 className={cx("mb-0")}>
                     <Link
-                      to={"/"}
+                      to={"/team-table"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -413,6 +417,7 @@ function Header() {
                   <h5 className={cx("mb-0")}>
                     <Link
                       to={"/about"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -430,7 +435,8 @@ function Header() {
                 >
                   <h5 className={cx("mb-0")}>
                     <Link
-                      to={"/"}
+                      to={"/contact"}
+                      onClick={() => dropdownMenu(false)}
                       className={cx(
                         "text-decoration-none text-dark d-flex justify-content-between p-3",
                         "link-item"
@@ -475,6 +481,7 @@ function Header() {
               <Link
                 to={"/login"}
                 className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
+                onClick={() => dropdownMenu(false)}
               >
                 Login
               </Link>
@@ -484,6 +491,7 @@ function Header() {
               <Link
                 to={"/register"}
                 className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
+                onClick={() => dropdownMenu(false)}
               >
                 Register
               </Link>
