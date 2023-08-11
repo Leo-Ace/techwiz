@@ -7,8 +7,15 @@ const cx = classNames.bind(styles);
 function Squad() {
 	return (
 		<div className={cx("detail_member2")}>
+			<div className={cx("banner_club")}>
+				<img className={cx("w-100")} src='/images/banne_detailClub.gif' />
+			</div>
 			<div className={cx("container")}>
 				<div className={cx("row")}>
+					<div className={cx("name_doi_bong text-center py-5 w-100 text-danger text-uppercase")}>
+						<h1>HaNoi FC</h1>
+						<hr className={cx("bg-danger")}/>
+					</div>
 					<div className={cx("wrap-list-cauthu ")}>
 						<li class="list-cauthu">
 							<a href="/the-thao/du-lieu-bong-da/cau-thu/l-messi-154" alt="L. Messi" class="header-list-cauthu" >
