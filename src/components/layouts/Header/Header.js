@@ -278,7 +278,7 @@ function Header() {
                                 "item"
                               )}
                             >
-                              Hi {account.name}
+                              {account.name}
                             </span>
                           </li>}
                           {account.name && <li className={cx("nav-item")}>
@@ -513,7 +513,7 @@ function Header() {
                     "item"
                   )}
                 >
-                  Hi {account.name}
+                  {account.name}
                 </span>
 
                 <span className={cx("small mx-2 d-block text-secondary")}>OR</span>

@@ -11,6 +11,8 @@ import { MdSecurity } from "react-icons/md"
 const cx = classNames.bind(styles);
 
 function Home() {
+  // const 
+  
   return (
     <>
       <main className={cx("homecomponent")}>
@@ -68,6 +70,7 @@ function Home() {
             <div className={cx("bcd", "my-2")}>
               <div className={cx("live")}>
                 <div className={cx("pb-2","text")}>Live match streaming</div>
+
                 <div className={cx("row m-0 mb-3")}>
                   <div className={cx("col-md-9 m-0 p-0 ")}>
                     <div className={cx("boder-colum", "pt-2")}>
@@ -83,7 +86,7 @@ function Home() {
                           />
                           <div
                             className={cx(
-                              "text-content text-center text-light"
+                              "text-content text-center text-light h5 p-0 m-0"
                             )}
                           >
                             Tigres Zipaquira
@@ -92,7 +95,7 @@ function Home() {
                         <div className={cx("col-4")}>
                           <div
                             className={cx(
-                              "col-12 mt-5 p-1 text-center text-light",
+                              "col-12 h5 mt-5 p-1 text-center text-light",
                               "score"
                             )}
                           >
@@ -100,7 +103,7 @@ function Home() {
                           </div>
                           <div
                             className={cx(
-                              "text-content text-center text-light"
+                              "text-content text-center text-light h5"
                             )}
                           >
                             2 - 2
@@ -117,7 +120,7 @@ function Home() {
                           />
                           <div
                             className={cx(
-                              "text-content text-center text-light"
+                              "text-content text-center text-light h5 p-0 m-0"
                             )}
                           >
                             Tigres Zipaquira
@@ -133,7 +136,7 @@ function Home() {
                           <div
                             className={cx(
                               "text-comment",
-                              "py-1 px-2 text-center"
+                              "py-1 px-2 text-center h5 p-0 m-0"
                             )}
                           >
                             Peter Drury
@@ -148,91 +151,7 @@ function Home() {
                       <h1 className={cx("text-center")}>17:00</h1>
                     </div>
                     <div className={cx("detail")}>
-                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white")}>View</Link></div>
-                    </div>
-                  </div>
-                </div>
-                <div className={cx("row m-0 mb-3")}>
-                  <div className={cx("col-md-9 m-0 p-0 ")}>
-                    <div className={cx("boder-colum", "pt-2")}>
-                      <div className={cx("d-flex pb-2", "content")}>
-                        <div
-                          className={cx(
-                            "col-4 d-flex flex-column justify-content-center"
-                          )}
-                        >
-                          <img
-                            className={cx("w-50 m-auto d-block")}
-                            src="/images/team1.jpg"
-                          />
-                          <div
-                            className={cx(
-                              "text-content text-center text-light"
-                            )}
-                          >
-                            Tigres Zipaquira
-                          </div>
-                        </div>
-                        <div className={cx("col-4")}>
-                          <div
-                            className={cx(
-                              "col-12 mt-5 p-1 text-center text-light",
-                              "score"
-                            )}
-                          >
-                            Live
-                          </div>
-                          <div
-                            className={cx(
-                              "text-content text-center text-light"
-                            )}
-                          >
-                            2 - 2
-                          </div>
-                        </div>
-                        <div
-                          className={cx(
-                            "col-4 d-flex flex-column justify-content-center"
-                          )}
-                        >
-                          <img
-                            className={cx("w-50 m-auto d-block")}
-                            src="/images/team1.jpg"
-                          />
-                          <div
-                            className={cx(
-                              "text-content text-center text-light"
-                            )}
-                          >
-                            Tigres Zipaquira
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className={cx(
-                          " text-light justify-content-between align-items-center"
-                        )}
-                      >
-                        <div className="comment h-100 align-items-center">
-                          <div
-                            className={cx(
-                              "text-comment",
-                              "py-1 px-2 text-center"
-                            )}
-                          >
-                            Peter Drury
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={cx("col-md-3", "bg-time")}>
-                    <h6 className={cx("text-center my-3")}>Premier League</h6>
-                    <div className="time">
-                      <h1 className={cx("text-center")}>17:00</h1>
-                    </div>
-                    <div className={cx("detail")}>
-                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white")}>View</Link></div>
+                      <div className={cx("text-center", "text-detail")}><Link className={cx("text-center", "text-decoration-none text-white w-100 d-block")}>View</Link></div>
                     </div>
                   </div>
                 </div>

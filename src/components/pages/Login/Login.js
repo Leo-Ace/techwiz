@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import styles from './loggin.module.css';
+import styles from './login.module.css';
 import { useForm } from 'react-hook-form';
 import {Link} from 'react-router-dom'
 import { account } from '../../../db';
@@ -8,10 +8,6 @@ const cx = classNames.bind(styles);
 const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const passwordPattern = /^[a-z0-9_\.]+$/;
 
-
-
-
-
 function Login(props) {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const accounts = account;
@@ -19,7 +15,6 @@ function Login(props) {
         let acc = accounts.find((item)=>{
             return item.email === data.email && item.password === data.password
         });
-
         if(acc) {
             sessionStorage.setItem('login', JSON.stringify(acc));
             window.location.assign('/');
@@ -27,7 +22,7 @@ function Login(props) {
             window.alert('Email address or passrord is incorrect')
         }
     };
-
+    
     return (
         <section className={cx("h-100 bg-dark")}>
             <div className={cx("container py-5 h-100")}>

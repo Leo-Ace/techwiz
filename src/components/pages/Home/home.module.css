@@ -3,13 +3,13 @@
 }
 
 .score {
-    background-color: #ff6600;
-    border: 1px solid #ff6600;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
     border-radius: 5px;
 }
 
 .content {
-    border-bottom: 1px solid #ff6600;
+    border-bottom: 1px solid #ff0000;
 }
 
 .boder-colum {
@@ -18,9 +18,9 @@
     background-size: 100%;
 }
 
-.text-comment:hover {
+/* .text-comment:hover {
     background-color: #ff6600;
-}
+} */
 
 .banner-img {
     width: 100%;
@@ -67,14 +67,15 @@
     font-size: 20px;
     border: 1px solid white;
     margin-bottom: 10px;
+    transition: all 0.3s linear;
 }
 .text-detail:hover{
-    background-color: #ff6600;
+    background-color: #ff0000;
 }
 .text{
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 1px solid #ff6600;
+    border-bottom: 1px solid #818181;
     margin-bottom: 20px;
 }
 .font-size{
