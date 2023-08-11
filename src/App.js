@@ -4,6 +4,7 @@ import Main from './components/layouts/Main';
 import Home from './components/pages/Home/Home';
 import Detail_player from './components/pages/Detail/Detail.player';
 import About from './components/pages/About/About';
+import Detail_club from './components/pages/Detail_club/Detail_club';
 import Squad from './components/pages/squad/Squad';
 import Match from './components/pages/MatchDetail/Match';
 import Detail_club from './components/pages/Detail_club/Detail_club';
