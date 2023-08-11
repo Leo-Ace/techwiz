@@ -1,9 +1,6 @@
 .homecomponent {
     background-color: #fff;
 }
-.bcd{
-    background-color: rgba(29, 29, 29, 0.96);
-}
 
 .score {
     background-color: #ff6600;
@@ -17,7 +14,6 @@
 
 .boder-colum {
     border: 1px solid #ccc;
-    margin-bottom: 10px;
     background-image: url(../../../../public/images/background.jpg);
     background-size: 100%;
 }
@@ -45,6 +41,7 @@
     background-image: url(../../../../public/images/banner4.png);
     background-size: cover;
     padding: 50px;
+    background-color: #292929;
 }
 
 .size {
@@ -61,4 +58,26 @@
 .zoom-effect:hover {
     transform: scale(1.1);
     /* Tăng kích thước lên 110% khi hover */
+}
+.bg-time{
+    background: #292929;
+    color: white;
+}
+.text-detail{
+    font-size: 20px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+.text-detail:hover{
+    background-color: #ff6600;
+}
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ff6600;
+    margin-bottom: 20px;
+}
+.font-size{
+    font-size: 30px;
+    margin-top: 10px;
 }
