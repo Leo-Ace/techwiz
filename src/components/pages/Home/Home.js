@@ -506,13 +506,13 @@ function Home() {
               </div>
 
               <div className={cx("col-md-4")}>
-                <Link to={"/"} className={cx("text-decoration-none")}>
+                <Link to={"/about"} className={cx("text-decoration-none")}>
                   <div className={cx("card", "mb-4", "phong")}>
                     <div
                       className={cx("card-body", "text-center", "zoom-effect")}
                     >
                       <PiSoccerBallFill className={cx("size")} />
-                      <h4 className={cx("card-title")}>Detail-player</h4>
+                      <h4 className={cx("card-title")}>About Us</h4>
                       <p className={cx("card-text")}>Best Sports Features</p>
                     </div>
                   </div>
@@ -520,13 +520,13 @@ function Home() {
               </div>
 
               <div className={cx("col-md-4")}>
-                <Link to={"/"} className={cx("text-decoration-none")}>
+                <Link to={"/contact"} className={cx("text-decoration-none")}>
                   <div className={cx("card", "mb-4")}>
                     <div
                       className={cx("card-body", "text-center", "zoom-effect")}
                     >
                       <PiSoccerBallFill className={cx("size")} />
-                      <h4 className={cx("card-title")}>Technical Body</h4>
+                      <h4 className={cx("card-title")}>Contact Us</h4>
                       <p className={cx("card-text")}>Best Sports Features</p>
                     </div>
                   </div>
