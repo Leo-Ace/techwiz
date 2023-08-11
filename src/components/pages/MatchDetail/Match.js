@@ -43,7 +43,7 @@ function Match() {
       <div className={cx("video m-5")}>
         <div className={cx("container")}>
           <div className={cx("text-center")}>
-            <iframe width="952" height="535,5" src="https://www.youtube.com/embed/IfZ9KDOJpwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className={cx("w-100 ")} src="https://www.youtube.com/embed/IfZ9KDOJpwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>

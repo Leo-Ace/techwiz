@@ -16,7 +16,7 @@
       "birthday": "10/6/1959",
       "country": "Italy",
       "description": "",
-      "thumbnail": "./images/images-C_Ancelotti.jpg"
+      "thumbnail": "./images/coach-C_Ancelotti.jpg"
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
       "birthday": "16/6/1967",
       "country": "Germany",
       "description": "",
-      "thumbnail": "./images/images-J_Klopp.jpg"
+      "thumbnail": "./images/coach-J_Klopp.jpg"
     },
     {
       "id": 3,
@@ -32,7 +32,7 @@
       "birthday": "2/2/1970",
       "country": "Netherlands",
       "description": "",
-      "thumbnail": "./images/images-ten_Hag.jpg"
+      "thumbnail": "./images/coach-Erik_ten_Hag.jpgg"
     },
     {
       "id": 4,
@@ -40,7 +40,7 @@
       "birthday": "18/1/1971",
       "country": "Spain",
       "description": "",
-      "thumbnail": "./images/images-Guardiola.jpg"
+      "thumbnail": "./images/coach-Guardiola.jpg"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "birthday": "25/1/1980",
       "country": "Spain",
       "description": "",
-      "thumbnail": "./images/images-Xavi.jpg"
+      "thumbnail": "./images/coach-Xavi.jpg"
     }
   ],
   "footballTeam": [
@@ -57,7 +57,7 @@
       "id_coach": 1,
       "name": "Real Madrid",
       "thumbnail": "./images/logo-Real_Madrid.png",
-      "banner": "./images/banner-real_madrid.jpg",
+      "banner": "./images/banner-Real_Madrid.jpg",
       "achievements": ["20th Copa del Rey", "8th Club World Championship", "5th European Super Cup", "35th National Championship", "The 12th Spanish Super Cup has also arrived"],
       "description": "Real Madrid Club de Fútbol, commonly known as Real Madrid or simply Real, is a Spanish professional football club based in Madrid. Real Madrid is FIFA's Best Football Club of the 20th Century. <br /> Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn a white home kit since its inception. The title real, which means royal in Spanish, was bestowed on the club by King Alfonso XIII in 1920 with a royal crown on the coat of arms. The club has played home matches at the 81,044 capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most other European sports clubs, the members of Real Madrid (socios) have owned and operated the club throughout its formation and development."
     },
@@ -65,7 +65,7 @@
       "id": 2,
       "id_coach": 3,
       "name": "Manchester United",
-      "thumbnail": "./images/logo-Manchester_United.png",
+      "thumbnail": "./images/logo_Manchester_United.png",
       "banner": "./images/banner-Manchester_United.jpg",
       "achievements": ["20 EPL - EXCLUSIVE ENGLISH", "12 FA CUP", "5 EFP - LEAGUE CUP", "21 ENGLISH SUPER CUP", "3 EUROPEAN CUP", "8 EUROPEAN C2 Cup"],
       "description": "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England. The club currently plays in the English Premier League, the top division in the English football system. Nicknamed the Red Devils, the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910."
@@ -83,7 +83,7 @@
       "id": 4,
       "id_coach": 2,
       "name": "Liverpool",
-      "thumbnail": "./images/logo-Liverpool.png",
+      "thumbnail": "./images/logo_Liverpool.png",
       "banner": "./images/banner-Liverpool.jpg",
       "achievements": ["First Division/Premier League (19)", "Second Division (4)", "Lancashire League (1)", "UEFA Champions League/European Cup (6)", "UEFA Cup (3)", "European Super Cup (4)"],
       "description": "Liverpool Football Club is a professional football club based in Liverpool, England, currently playing in the Premier League, the top division of the English football system. Domestically, the club has won 19 Premier League titles, eight FA Cups, a record nine League Cups and 16 FA Community Shields. In international competitions, the club has won six European Cups, more than any other English club, three UEFA Cups, four UEFA Super Cups and one FIFA Club World Cup.<br/>Liverpool was founded on 3 June 1892 by John Houlding and ascended to the national league the following year. The team has used the Anfield home ground since its inception until now. The team was very successful in the 70s and 80s, under coaches Bill Shankly and Bob Paisley, they won 11 national championships and 7 European titles."
@@ -92,7 +92,7 @@
       "id": 5,
       "id_coach": 5,
       "name": "Barcelone",
-      "thumbnail": "./images/logo-Barcelone.png",
+      "thumbnail": "./images/logo_Barcelone.png",
       "banner": "./images/banner-Barcelone.jpg",
       "achievements": ["27 La Liga", "31 Copa del Rey", "14 Supercopa de España", "3 Copa Eva Duarte and 2 Copa de la Liga"],
       "description": "Futbol Club Barcelona, ​​commonly known simply as Barcelona, ​​or simply Barça ([ˈbaɾsə]), is a professional football club based in Barcelona, ​​Catalunya, Spain, that plays in La Liga, the top league of Spanish football..<br /> Founded in 1899 by a group of Swiss, Catalan, German and English footballers led by Joan Gamper, the club has become an icon of Catalan culture and Catalanism, hence its motto 'Més que un club' ('More than a club'). Unlike many other football clubs, supporters own and run Barcelona. It is the fourth most valuable sports team in the world, valued at $4.76 billion, and the fourth-richest football club in the world in terms of revenue, with an annual turnover of 582.1 million euros. [2][3] The official anthem of Barcelona is 'Cant del Barça', written by Jaume Picas and Josep Maria Espinàs.[4] Traditionally, Barcelona played with dark blue and garnet stripes, hence the nickname Blaugrana."
@@ -105,7 +105,7 @@
       "name": "Thibaut Courtois",
       "birthday": "11/5/1992",
       "country": "Belgium",
-      "thumbnail": "./images/player-t_courtois.jpg",
+      "thumbnail": "./images/player-Thibaut_Courtois.jpg",
       "achievements": {
         "statistics": {
           "match": 550,
@@ -127,7 +127,7 @@
       "name": "Eduardo Camavinga",
       "birthday": "10/11/2002",
       "country": "France",
-      "thumbnail": "./images/player-e_camavinga.jpg",
+      "thumbnail": "./images/player-Eduardo_Camavinga.jpg",
       "achievements": {
         "statistics": {
           "match": 77,
@@ -149,7 +149,7 @@
       "name": "David Alaba",
       "birthday": "24/6/1992",
       "country": "Austria",
-      "thumbnail": "./images/player-d_Alaba.jpg",
+      "thumbnail": "./images/player-David_Alaba.jpg",
       "achievements": {
         "statistics": {
           "match": 564,
@@ -171,7 +171,7 @@
       "name": "Eder Militao",
       "birthday": "18/01/1998",
       "country": "Brazil",
-      "thumbnail": "./images/player-e_Militao.jpg",
+      "thumbnail": "./images/player-Eder_Militao.jpg",
       "achievements": {
         "statistics": {
           "match": 135,
@@ -281,7 +281,7 @@
       "name": "Vinicius Junior",
       "birthday": "12/7/2000",
       "country": "Brazil",
-      "thumbnail": "./images/player-Vinícius_Júnior.jpg",
+      "thumbnail": "./images/player-Vinicius_Junior.jpg",
       "achievements": {
         "statistics": {
           "match": 167,
@@ -303,7 +303,7 @@
       "name": "Karim Benzema",
       "birthday": "19/12/1987",
       "country": "France",
-      "thumbnail": "./images/player-Karim_Benzema.jpg",
+      "thumbnail": "./images/player-Karim_Benzema.webp",
       "achievements": {
         "statistics": {
           "match": 740,
@@ -391,7 +391,7 @@
       "name": "Virgil van Dijk",
       "birthday": "08/07/1991",
       "country": "Netherlands",
-      "thumbnail": "./images/player-van_Dijk.jpg",
+      "thumbnail": "./images/player-Virgil_van_Dijk.jpg",
       "achievements": {
         "statistics": {
           "match": 524,
@@ -501,7 +501,7 @@
       "name": "Cody Gakpo",
       "birthday": "07/05/1999",
       "country": "Netherlands",
-      "thumbnail": "./images/player-Cody_Gakpo.jpg",
+      "thumbnail": "./images/player-Cody_Gakpo",
       "achievements": {
         "statistics": {
           "match": 285,
@@ -545,7 +545,7 @@
       "name": "Diogo Jota",
       "birthday": "04/12/1996",
       "country": "Portugal",
-      "thumbnail": "./images/player-Diogo_Jota.jpg",
+      "thumbnail": "./images/player-Diogo_Jota",
       "achievements": {
         "statistics": {
           "match": 244,
@@ -567,7 +567,7 @@
       "name": "Mohamed Salah",
       "birthday": "15/06/1992",
       "country": "Egypt",
-      "thumbnail": "./images/player-Mohamed_Salah.jpg",
+      "thumbnail": "./images/player-Mohamed_Salah",
       "achievements": {
         "statistics": {
           "match": 598,

@@ -1,15 +1,20 @@
 .header-menu {
-  top: -100px !important;
-  opacity: 1;
-  transition: all 0.3s linear;
+  top: 0 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.137);
 }
 
-.header-menu {
-  top: -100px !important;
-  opacity: 1;
-  transition: all 0.3s linear;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+.header-menu>div {
+  transition: all 0.2s linear;
+  z-index: 2000;
+}
+
+@keyframes animationHeader {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .box-menu .item {
