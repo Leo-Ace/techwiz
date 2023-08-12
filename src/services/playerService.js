@@ -19,3 +19,10 @@ export const getPlayerByIdTeam = (id) => {
   const result = player.filter(item => item.id_team === id);
   return [null, result]
 }
+
+export const getTopTenPayer = () => {
+  const result = player.sort((a, b) => {
+    return a.statistics.goal - b.statistics.goal;
+  })
+  return [null, result]
+}

@@ -12,11 +12,14 @@ import {
 import { getAllMatch } from "../../../services/matchServicce";
 import { getTeamById } from "../../../services/teamService";
 import $ from 'jquery';
+import { getAllPlayer, getTopTenPayer } from "../../../services/playerService";
 
 const cx = classNames.bind(styles);
 
 function Home() {
   const [match, setMatch] = useState([]);
+  const [listPlayer, setListPlayer] = useState([]);
+
     useEffect(() => {
         $("html, body").animate({ scrollTop: "0" }, "slow");
     }, []);
@@ -24,6 +27,8 @@ function Home() {
   useEffect(() => {
     const [err_match, data_match] = getAllMatch();
     setMatch(data_match);
+    const [err_player, data_player] = getTopTenPayer();
+    setListPlayer(data_player);
   }, []);
 
   const getOrderMatch = (id) => {
@@ -532,6 +537,45 @@ function Home() {
                   </div>
                 </Link>
               </div>
+            </div>
+            <div>
+              <h2 className={cx("text", "text-danger text-uppercase w-100 text-center")}>top 10 players</h2>
+              <div className={cx("player row")}>
+            {listPlayer && listPlayer.splice(0, 10).map((item, index) => (
+                <div key={index} className={cx("col-lg-4 col-md-6 p-3")}>
+                  <div className={cx("cau_thu", "position-relative m-0")}>
+                    <Link to={`/player/${item.id}`} className={cx("")}>
+                      <div
+                        className={cx("img_player", "bg-white overflow-hidden")}
+                      >
+                        <img src={item.thumbnail} alt={item.thumbnail} />
+                      </div>
+                      <div className={cx("number", "position-absolute")}>
+                        <p className={cx("m-0 p-0 px-2 mr-2")}>{item.id}</p>
+                        <p
+                          className={cx(
+                            "location",
+                            "position-absolute p-0 m-0"
+                          )}
+                        >
+                          {item.location}
+                        </p>
+                      </div>
+                      <div
+                        className={cx(
+                          "desc_player",
+                          "p-1 w-100 text-center text-dark position-relative bg-transparent"
+                        )}
+                      >
+                        <p className={cx("p-0 m-0 text-center w-100")}>
+                          {item.name}
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              ))}
+          </div>
             </div>
           </div>
           <div>

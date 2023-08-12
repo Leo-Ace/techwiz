@@ -1721,16 +1721,10 @@ export const orderMatch = [
 
 export const comment = [
   {
-    id: 0,
-    id_user: 0,
-    id_match: 0,
+    id: 1,
+    id_user: 1,
+    id_match: 1,
     content: "",
     time: "",
-  },
-];
-
-export const wishlist = [
-  {
-    id: 0,
   },
 ];
