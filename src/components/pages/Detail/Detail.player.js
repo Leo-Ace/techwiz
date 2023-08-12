@@ -11,17 +11,21 @@ function Detail_player(props) {
   const { id } = useParams();
   const [player, setPlayer] = useState();
   const [club, setClub] = useState();
+
   useEffect(() => {
     $("html, body").animate({ scrollTop: "0" }, "slow");
   }, []);
 
   useEffect(() => {
-    const [err, data_player] = getPlayerById(Number(id));
-    setPlayer(data_player);
-    const [err_team, data_team] = getTeamById(
-      Number(data_player ? data_player.id_team : "")
-    );
-    setClub(data_team);
+    const start = async () => {
+      const [err_player, data_player] = await getPlayerById(Number(id));
+      setPlayer(data_player);
+      const [err_team, data_team] = await getTeamById(
+        Number(data_player ? Number(data_player.id_team) : '')
+      );
+      setClub(data_team);
+    }
+    start();
   }, [id]);
 
   return (

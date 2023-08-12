@@ -43,6 +43,10 @@ function Home() {
     return data_team;
   };
 
+  const handleClickPlayer = (id) => {
+    window.location.href = `/player/${id}`;
+  }
+
   return (
     <>
       <main className={cx("homecomponent")}>
@@ -544,7 +548,7 @@ function Home() {
             {listPlayer && listPlayer.splice(0, 10).map((item, index) => (
                 <div key={index} className={cx("col-lg-4 col-md-6 p-3")}>
                   <div className={cx("cau_thu", "position-relative m-0")}>
-                    <Link to={`/player/${item.id}`} className={cx("")}>
+                    <Link onClick={() => handleClickPlayer(item.id)} className={cx("")}>
                       <div
                         className={cx("img_player", "bg-white overflow-hidden")}
                       >
