@@ -32,7 +32,7 @@ function Squad() {
       <div className={cx("banner_club")}>
         <img
           className={cx("w-100")}
-          src="/images/banne_detailClub.gif"
+          src="./images/banne_detailClub.gif"
           alt=""
         />
       </div>
