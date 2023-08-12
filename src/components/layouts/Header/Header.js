@@ -589,8 +589,8 @@ function Header() {
           className={cx("box-iconup", "position-fixed")}
           onClick={handleScrollTop}
         >
-          <span className={cx("bg-danger p-2 btn rounded-circle")}>
-            <BsChevronUp color="#fff" fontSize={25} height={25} width={25} />
+          <span className={cx("bg-danger p-2 btn rounded-50")}>
+            <BsChevronUp color="#fff" fontSize={25} />
           </span>
         </div>
       </div>
