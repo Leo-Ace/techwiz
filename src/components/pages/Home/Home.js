@@ -20,9 +20,9 @@ function Home() {
   const [match, setMatch] = useState([]);
   const [listPlayer, setListPlayer] = useState([]);
 
-    useEffect(() => {
-        $("html, body").animate({ scrollTop: "0" }, "slow");
-    }, []);
+  useEffect(() => {
+    $("html, body").animate({ scrollTop: "0" }, "slow");
+  }, []);
 
   useEffect(() => {
     const [err_match, data_match] = getAllMatch();

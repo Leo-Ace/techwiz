@@ -18,7 +18,6 @@ function Detail_player(props) {
   useEffect(() => {
     const [err, data_player] = getPlayerById(Number(id));
     setPlayer(data_player);
-    console.log(data_player);
     const [err_team, data_team] = getTeamById(
       Number(data_player ? data_player.id_team : "")
     );
