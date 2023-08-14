@@ -54,27 +54,27 @@ function Footer(props) {
               <div className={cx("footer_title")}>Site Map</div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link className="ml-1 text-decoration-none text-white" to="/">Home</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link className="ml-1 text-decoration-none text-white" to="">Our team</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link className="ml-1 text-decoration-none text-white" to="/team-table">Team table</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link className="ml-1 text-decoration-none text-white" to="/about">About us</Link>
                 <div className={cx("line")}></div>
               </div>
               <div className={cx("list_link")}>
                 <GoArrowRight fontSize={20} color='#e01a22' />
-                <Link to="/">Home</Link>
+                <Link className="ml-1 text-decoration-none text-white" to="/contact">Contact us</Link>
                 <div className={cx("line")}></div>
               </div>
             </div>
@@ -82,7 +82,7 @@ function Footer(props) {
               <div className={cx("footer_title")}>Recent Post</div>
               <div className={cx("desc row")}>
                 <div className={cx("col-lg-3 anh")}>
-                  <img src='/images/footer-post.jpg' width={60} height={60} />
+                  <img src='/images/footer-post.jpg' width={60} height={60} alt="" />
                 </div>
                 <div className='desc_text col-lg-9'>
                   <p>Lorem ipsum dolor amet, conse-ctetur adipiscing.</p>
@@ -91,7 +91,7 @@ function Footer(props) {
               <div className={cx("line")}></div>
               <div className={cx("desc row")}>
                 <div className={cx("col-lg-3 anh")}>
-                  <img src='/images/footer-post-2.jpg' width={60} height={60} />
+                  <img src='/images/footer-post-2.jpg' width={60} height={60} alt="" />
                 </div>
                 <div className='desc_text col-lg-9'>
                   <p>Lorem ipsum dolor amet, conse-ctetur adipiscing.</p>
@@ -100,7 +100,7 @@ function Footer(props) {
               <div className={cx("line")}></div>
               <div className={cx("desc row")}>
                 <div className={cx("col-lg-3 anh")}>
-                  <img src='/images/footer-post.jpg' width={60} height={60} />
+                  <img src='/images/footer-post.jpg' width={60} height={60} alt="" />
                 </div>
                 <div className='desc_text col-lg-9'>
                   <p>Lorem ipsum dolor amet, conse-ctetur adipiscing.</p>
@@ -137,7 +137,7 @@ function Footer(props) {
         </div>
       </footer>
       <div className={cx("copyright")}>
-        <p>Copyright © 2023. Made with from Bkap</p>
+        <p>Copyright © 2023. Made with from SoccerVerse</p>
       </div>
     </>
   );

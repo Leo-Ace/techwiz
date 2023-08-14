@@ -1,15 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Match.css';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { getMatchById } from '../../../services/matchServicce';
+import { getOrderMatchByIdMatch } from '../../../services/orderMatchService';
+import { getTeamById } from '../../../services/teamService';
+import $ from 'jquery';
+
 const cx = classNames.bind(styles);
 function Match() {
+  const { id } = useParams();
+  const [match, setMatch] = useState();
+      useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
+
+  useEffect(() => {
+    const [err_match, data_match] = getMatchById(Number(id));
+    setMatch(data_match);
+  }, [id]);
+
+  const getOrderMatch = (id) => {
+    const [err_orderMatch, data_orderMatch] = getOrderMatchByIdMatch(
+      Number(id)
+    );
+    return data_orderMatch;
+  };
+
+  const getTeam = (id) => {
+    const [err_team, data_team] = getTeamById(Number(id));
+    return data_team;
+  };
+  
   return (
     <div className={cx("match")} >
       <div className={cx("time_match")} >
         <div className={cx("container ")} >
           <div className={cx("text-center")}>
-            <h2>Live match Real Madrid and Manchester Ciy</h2>
+            <h2>Trực tiếp trận đấu Real Madrid và Manchester Ciy</h2>
           </div>
           <div className={cx("row mb-2")} >
             <div className={cx("col-lg-6")}>
@@ -35,7 +63,7 @@ function Match() {
             </div>
           </div>
           <div className={cx("text-center")}>
-            <p className="blv">BLV: Giàng A Lử</p>
+            <p className="blv">BLV: Giàng A Táo</p>
             <p className="time">00:00 11/08/2023</p>
           </div>
         </div>
@@ -536,9 +564,8 @@ function Match() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
+      ) : ""}
+    </>
   );
 }
 

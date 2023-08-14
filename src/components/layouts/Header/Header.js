@@ -12,15 +12,45 @@ import { FaUser } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import $ from "jquery";
 import { getAllTeam } from "../../../services/teamService";
+import { getPlayerByName } from "../../../services/playerService";
 
 const cx = classNames.bind(styles);
 
 function Header() {
+  const [account, setAccount] = useState([]);
+  const inputSearchLg = useRef();
+  const inputSearchMd = useRef();
+  useEffect(() => {
+    const account = JSON.parse(sessionStorage.getItem('login'));
+    if (account) {
+      setAccount(account);
+      console.log(account)
+    }
+  }, []);
+
+  const onLogout = () => {
+    sessionStorage.clear();
+    window.location.assign('/login');
+  };
+
+
   const [team, setTeam] = useState([]);
-  
+
   const boxMenuMd = useRef();
   const headerElem = useRef();
   const iconScrollTop = useRef();
+
+  const handleSearch = (check) => {
+    if(check) {
+      const value = inputSearchLg.current.value;
+      const [err, data] = getPlayerByName(value);
+      window.location.href = `/player/${data ? data.id : value}`;
+    } else {
+      const value = inputSearchMd.current.value;
+      const [err, data] = getPlayerByName(value);
+      window.location.href = `/player/${data ? data.id : value}`;
+    }
+  }
 
   useEffect(() => {
     document.onscroll = () => {
@@ -52,7 +82,7 @@ function Header() {
 
   useEffect(() => {
     const [err_team, dt_team] = getAllTeam();
-    if(err_team) {
+    if (err_team) {
       throw Error('Error!');
     } else {
       setTeam(dt_team);
@@ -70,8 +100,8 @@ function Header() {
   };
 
   return (
-    <>
-      <header className={"headercomponent"}>
+    <header>
+      <div className={"headercomponent"}>
         <div className={cx("header-menu", "bg-transparent")} ref={headerElem}>
           <div className={cx("position-fixed fixed-top")}>
             <div className={cx("menu", "container")}>
@@ -219,12 +249,14 @@ function Header() {
                               className={cx(
                                 "form-control shadow-none border-0"
                               )}
+                              ref={inputSearchLg}
                             />
                             <button
-                              type="submit"
+                              type="button"
                               className={cx(
                                 "btn shadow-none border-0 position-absolute bg-transparent"
                               )}
+                              onClick={() => handleSearch(true)}
                             >
                               <BsSearch color="#000" />
                             </button>
@@ -256,7 +288,29 @@ function Header() {
                         )}
                       >
                         <ul className={cx("list-unstyled")}>
-                          <li className={cx("nav-item")}>
+                          {account.name && <li className={cx("nav-item")}>
+                            <span
+                              className={cx(
+                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                                "item"
+                              )}
+                            >
+                              {account.name}
+                            </span>
+                          </li>}
+                          {account.name && <li className={cx("nav-item")}>
+                            <a
+                              href="#"
+                              className={cx(
+                                "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                                "item"
+                              )}
+                              onClick={() => onLogout()}
+                            >
+                              Logout
+                            </a>
+                          </li>}
+                          {!account.name && <li className={cx("nav-item")}>
                             <Link
                               to={"/login"}
                               className={cx(
@@ -266,10 +320,10 @@ function Header() {
                             >
                               Login
                             </Link>
-                          </li>
-                          <li className={cx("nav-item")}>
+                          </li>}
+                          {!account.name && <li className={cx("nav-item")}>
                             <Link
-                              to={"/register"}
+                              to={'/register'}
                               className={cx(
                                 "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
                                 "item"
@@ -277,7 +331,7 @@ function Header() {
                             >
                               Register
                             </Link>
-                          </li>
+                          </li>}
                         </ul>
                       </div>
                     </li>
@@ -451,41 +505,75 @@ function Header() {
                   )}
                 >
                   <input
-                    type="textt"
+                    type="text"
                     name="q"
                     placeholder="search..."
                     className={cx("form-control w-100 bg-transparent p-4")}
+                    ref={inputSearchMd}
                   />
                   <button
-                    type="submit"
+                    type="button"
                     className={cx(
                       "btn border-0 shadow-none position-absolute h-100"
                     )}
+                    onClick={() => handleSearch(false)}
                   >
                     <BsSearch fontSize={25} color="red" />
                   </button>
                 </div>
               </form>
             </div>
-            <div className={cx("d-flex align-items-center")}>
-              <Link
-                to={"/login"}
-                className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
-                onClick={() => dropdownMenu(false)}
-              >
-                Login
-              </Link>
-              <span className={cx("small mx-2 d-block text-secondary")}>
-                OR
-              </span>
-              <Link
-                to={"/register"}
-                className={cx("text-decoration-none h5 p-0 m-0 p-2 d-block")}
-                onClick={() => dropdownMenu(false)}
-              >
-                Register
-              </Link>
-            </div>
+            {account.name &&
+              <div className={cx("d-flex align-items-center")}>
+
+                <span
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                >
+                  {account.name}
+                </span>
+
+                <span className={cx("small mx-2 d-block text-secondary")}>OR</span>
+
+                <Link
+                  to={''}
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                  onClick={() => onLogout()}
+                >
+                  Logout
+                </Link>
+              </div>
+            }
+            {!account.name &&
+              <div className={cx("d-flex align-items-center")}>
+
+                <Link
+                  to={"/login"}
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                >
+                  Login
+                </Link>
+
+                <span className={cx("small mx-2 d-block text-secondary")}>OR</span>
+                <Link
+                  to={'/register'}
+                  className={cx(
+                    "text-decoration-none d-block w-100 px-3 py-2 text-dark small",
+                    "item"
+                  )}
+                >
+                  Register
+                </Link>
+              </div>
+            }
           </div>
           <div
             className={cx("box-exit", "position-absolute p-0 m-0")}
@@ -501,12 +589,12 @@ function Header() {
           className={cx("box-iconup", "position-fixed")}
           onClick={handleScrollTop}
         >
-          <span className={cx("bg-danger p-2 btn rounded-0")}>
-            <BsChevronUp color="#fff" fontSize={30} />
+          <span className={cx("bg-danger p-2 btn rounded-50")}>
+            <BsChevronUp color="#fff" fontSize={25} />
           </span>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
 

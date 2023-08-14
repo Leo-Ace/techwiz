@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classNames from 'classnames/bind';
 import styles from './About.module.css';
 import { Link } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
+import $ from 'jquery';
+
 const cx = classNames.bind(styles);
+
 function About(props) {
+    useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
+
     return (
         <>
             <div className={cx("")}>

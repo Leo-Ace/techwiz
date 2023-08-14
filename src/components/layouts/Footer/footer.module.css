@@ -32,8 +32,11 @@ footer{
     color: #e01a22;
     margin-right: 10px ;
 }
-.list_link>a{
-    color: #ffffff;
+.list_link>a {
+    transition: all 0.3s linear;
+}
+.list_link>a:hover{
+    color: #fd0000 !important;
 }
 .line{
     border: 1px solid #949393;
@@ -44,6 +47,16 @@ footer{
     margin-right: 30px ;
     margin-left: 15px;
 }
+
+.footer_icon_item .item {
+    transition: all 0.3s  linear;
+    cursor: pointer;
+}
+
+.footer_icon_item .item:hover {
+    transform: scale(1.2);
+}
+
 .copyright{
     background-color: black;
     color: white;

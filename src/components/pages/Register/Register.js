@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './register.module.css';
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
+import { account } from '../../../db';
+import {Link} from 'react-router-dom'
+import $ from 'jquery';
+import { useEffect } from 'react';
+
 const cx = classNames.bind(styles);
 const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const passwordPattern = /^[a-z0-9_\.]+$/;
@@ -12,34 +15,24 @@ const namePattenrn = /^[A-ZÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸ
 
 function Register(props) {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const [account, setAccount] = useState([]);
-
+    const accounts = account;
     useEffect(() => {
-        async function getAccount() {
-            let res = await axios.get('http://localhost:8000/accounts');
-            let accounts = res.data;
-            setAccount(accounts);
-        }
-        getAccount();
+        $("html, body").animate({ scrollTop: "0" }, "slow");
     }, []);
 
-
     const onSubmit = async (data) => {
-        console.log(account);
+        console.log(accounts);
         console.log(data);
-        let acc = account.find((item) => {
-            return (item.email == data.email ? data.email : null);
+        let acc = accounts.find((item) => {
+            return (item.email === data.email ? data.email : null);
         });
 
         if (!acc) {
-            const res = await axios.post('http://localhost:8000/accounts', data);
             sessionStorage.setItem('login', JSON.stringify(acc));
-            window.location.assign('/login');
+            window.location.assign('/');
         } else {
             window.alert('Email already used, please use another email');
         }
-        // const res = await axios.post('http://localhost:8000/accounts', data);
-        // window.location.assign('login');
     };
 
     return (
@@ -47,16 +40,12 @@ function Register(props) {
             <div className={cx("container py-5 h-100")}>
                 <div className={cx("row d-flex justify-content-center align-items-center h-100")}>
                     <div className={cx("col")}>
-                        <div className={cx("card card-registration my-4")}>
+                        <div className={cx("my-4 text-white")}>
                             <div className={cx("row g-0")}>
-                                <div className={cx("col-xl-6 d-none d-xl-block p-md-5")}>
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
-                                        alt="Sample photo" className={cx("img-fluid")}
-                                        style={{ borderTopLeftRadius: ".25rem", borderBottomLeftRadius: ".25rem" }} />
-                                </div>
+                                
                                 <div className={cx("col-xl-6")}>
-                                    <div className={cx("card-body p-md-5 text-black")}>
-                                        <h3 className={cx("mb-5 text-uppercase")}>Student registration form</h3>
+                                    <div className={cx("card-body p-md-5")}>
+                                        <h3 className={cx("mb-5 text-uppercase")}>Create your account</h3>
 
                                         <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -101,19 +90,25 @@ function Register(props) {
 
                                             <div className={cx("form-outline mb-4")}>
                                                 <label className={cx("form-label")} for="form3Example9">Password</label>
-                                                <input {...register("password", { required: true, pattern: passwordPattern })} id="form2Example17" className={cx("form-control form-control-lg")} />
+                                                <input {...register("password", { required: true, pattern: passwordPattern, minLength: 8, maxLength: 32 })} id="form2Example17" className={cx("form-control form-control-lg")} />
                                                 {errors.password?.type === 'required' && <span className='small text-danger font-italic'>Password is not blank</span>}
-                                                {errors.password?.type === 'pattern' && <span className='small text-danger font-italic'>Only lowercase letters, numbers, underscores (_), dots (.) are allowed in User Name</span>}
+                                                {errors.password?.type === 'pattern' && <span className='small text-danger font-italic'>Only lowercase letters, numbers, underscores (_), dots (.) are allowed in password</span>}
+                                                {errors.password?.type === 'minLength' && <span className='small text-danger font-italic'>Password is more than 8 characters</span>}
+                                                {errors.password?.type === 'maxLength' && <span className='small text-danger font-italic'>Password is less than 32 characters</span>}
                                             </div>
-                                            <p className={cx("mb-5 pb-lg-2")} style={{ color: "#393f81;" }}>Have an account? <a href="#!"
-                                                style={{ color: "#393f81;" }}>Loggin here</a></p>
+                                            <p className={cx("mb-5 pb-lg-2")} style={{ color: "#393f81;" }}>Have an account? <Link to="/login"
+                                                style={{ color: "#393f81;" }}>Loggin here</Link></p>
 
                                             <div className={cx("d-flex justify-content-center")}>
-                                                <button type="submit" className={cx("btn btn-warning btn-lg ms-2")}>Submit form</button>
+                                                <button type="submit" className={cx("btn btn-warning btn-lg ms-2")}>Create</button>
                                             </div>
-
                                         </form>
                                     </div>
+                                </div>
+                                <div className={cx("col-xl-6 d-none d-xl-block p-md-5")}>
+                                    <img src="/images/img_register.avif"
+                                        alt="Sample photo" className={cx("img-fluid")}
+                                        style={{ borderRadius: ".25rem"}} />
                                 </div>
                             </div>
                         </div>

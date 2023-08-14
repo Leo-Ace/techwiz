@@ -6,20 +6,6 @@ git clone https://github.com/Leo-Ace/techwiz.git
 
 ## Config owlcarosels
 You need to inject a global window.jQuery first
-that's Tung's
-
-In node-modules directory: react-scripts -> config -> webpack.config.js
-
-plugins: [
-
-    // other plugins,
-    new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery'
-    }),
-    
-],
 
 ## Available Scripts
 

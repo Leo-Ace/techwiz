@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classNames from 'classnames/bind';
 import styles from './contact.module.css';
 import { FaMapMarked, FaRegPaperPlane, FaPhoneAlt, FaAngleDoubleRight } from 'react-icons/fa';
+import $ from 'jquery';
 
 const cx = classNames.bind(styles); 
 
 function Contact(props) {
+    useEffect(() => {
+        $("html, body").animate({ scrollTop: "0" }, "slow");
+    }, []);
+    
     return (
         <>
             <main>
