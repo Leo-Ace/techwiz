@@ -5,10 +5,9 @@ import Home from './components/pages/Home/Home';
 import Detailplayer from './components/pages/Detail/Detail.player';
 import About from './components/pages/About/About';
 import Squad from './components/pages/squad/Squad';
-import Match from './components/pages/MatchDetail/Match';
-import Detailclub from './components/pages/Detail_club/Detail_club';
 import Club from './components/pages/Detail_club/Detail_club';
 import Contact from './components/pages/Contact/Contact';
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 import Login from './components/pages/Login/Login';
@@ -16,6 +15,11 @@ import Register from './components/pages/Register/Register';
 import DetailMatch from './components/pages/MatchDetail/Match';
 
 >>>>>>> 8dd192122ad84388196459b482efc036a8b08657
+=======
+import Login from './components/pages/Login/Login';
+import Register from './components/pages/Register/Register';
+
+>>>>>>> 2014f93b6ab4eac26243d820b12d939be69891c3
 function App() {
   return (
     <>
@@ -26,14 +30,19 @@ function App() {
         <Route path='/team-table' element={<Main children={<Squad />} />} />
         <Route path='/match/:id' element={<Main children={<DetailMatch />} />} />
         <Route path='/about' element={<Main children={<About />} />} />
-        <Route path='/club/:name/:id' element={<Main children={<Detailclub/>} />} />
         <Route path='/contact' element={<Main children={<Contact />} />} />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         <Route path='/login' element={<Main children={<Login/>} />} />
         <Route path='/register' element={<Main children={<Register/>} />} />
 
 >>>>>>> 8dd192122ad84388196459b482efc036a8b08657
+=======
+        <Route path='/login' element={<Main children={<Login/>} />} />
+        <Route path='/register' element={<Main children={<Register/>} />} />
+
+>>>>>>> 2014f93b6ab4eac26243d820b12d939be69891c3
       </Routes>
     </>
   );
